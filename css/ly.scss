@@ -104,12 +104,13 @@
 
 
   p{
+  font-size:0.24rem ;
   color:white;
   margin-left:0.7rem;
   margin-top:0.07rem;
   }
   span{
-  font-size:0.12rem;
+    font-size:0.18rem;
     margin-left:0.7rem;
     margin-top:0.04rem;
     color:#FF84A2;
@@ -197,8 +198,9 @@
       p{
         width:0.8rem;
         height:0.35rem;
-        margin-left:0.65rem;
-        margin-top:0.15rem;
+        margin-left:0.6rem;
+        margin-top:0.18rem;
+
       }
       div{
         width:1.4rem;
@@ -314,12 +316,14 @@
   left: 0rem;
   top: 8.2rem;
   p{
-    font-size: 0.16rem;
+    font-size: 0.2rem;
+    margin-top:0.05rem;
   }
   div{
+    margin-top:0.05rem;
     margin-left:0.7rem;
     color:#FF7699;
-    font-size: 0.14rem;
+    font-size: 0.18rem;
   }
   .sell{
      width:6.66rem;
@@ -390,12 +394,12 @@
     margin-top:0.1rem;
   }
   p{
-    font-size:0.14rem;
+    font-size:0.3rem;
     margin-top:0.15rem;
     color:white;
   }
   span{
-    font-size:0.14rem;
+    font-size:0.18rem;
     color:#FF7799;
   }
 }

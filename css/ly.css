@@ -113,13 +113,14 @@
 }
 
 .shop p {
+  font-size: 0.24rem;
   color: white;
   margin-left: 0.7rem;
   margin-top: 0.07rem;
 }
 
 .shop span {
-  font-size: 0.12rem;
+  font-size: 0.18rem;
   margin-left: 0.7rem;
   margin-top: 0.04rem;
   color: #FF84A2;
@@ -214,8 +215,8 @@
 .message .leikuang .leibie p {
   width: 0.8rem;
   height: 0.35rem;
-  margin-left: 0.65rem;
-  margin-top: 0.15rem;
+  margin-left: 0.6rem;
+  margin-top: 0.18rem;
 }
 
 .message .leikuang .leibie div {
@@ -341,13 +342,15 @@
 }
 
 .choose p {
-  font-size: 0.16rem;
+  font-size: 0.2rem;
+  margin-top: 0.05rem;
 }
 
 .choose div {
+  margin-top: 0.05rem;
   margin-left: 0.7rem;
   color: #FF7699;
-  font-size: 0.14rem;
+  font-size: 0.18rem;
 }
 
 .choose .sell {
@@ -427,12 +430,12 @@
 }
 
 .bottom p {
-  font-size: 0.14rem;
+  font-size: 0.3rem;
   margin-top: 0.15rem;
   color: white;
 }
 
 .bottom span {
-  font-size: 0.14rem;
+  font-size: 0.18rem;
   color: #FF7799;
 }
