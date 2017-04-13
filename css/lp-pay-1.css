@@ -119,7 +119,9 @@
 }
 .lp-body>.lp-line1>.lp-money>.lp-qian{
 	font-size:0.48rem;
+	font-weight:0.8;
 	color:#f81e3d;
+	font-family:'ALTGOT2N';
 }	
 .lp-body>.lp-line1>.lp-money>img{
 	margin-top:0.04rem;
