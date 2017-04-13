@@ -1,0 +1,239 @@
+/*nav*/
+.lp-header{
+	width:100%;
+	height:1rem;
+	background:#f62466;
+	position:fixed;
+	left:0;
+	top:0;
+}
+.lp-header>.lp-container{
+	width:7.02rem;
+	height:1rem;
+	margin:0 auto;
+	text-align:justify;	
+	box-sizing:border-box;
+	line-height:1.2rem;
+}
+.lp-header>.lp-container:after{
+	content:'';
+	width:100%;
+	display:inline-block;
+}
+.lp-header>.lp-container>img:nth-child(1){
+	width:0.34rem;
+}
+.lp-header>.lp-container>img:nth-child(2){
+	width:1.45rem;
+}
+.lp-header>.lp-container>img:nth-child(3){
+	width:0.65rem;
+}
+/*line1*/
+.lp-body{
+	background:#f7f7f7;	
+	height:13.14rem;
+	padding-top:1rem;
+	box-sizing:border-box;
+}
+.lp-body>.lp-line1{
+	margin-top:0.1rem;	
+	display:block;
+	height:1.94rem;
+	width:100%;
+	position:relative;
+}
+.lp-body>.lp-line1>.lp-circle1{
+	width:0.22rem;
+	float:left;
+	margin-top:0.9rem;
+	margin-left:0.24rem;
+}
+.lp-body>.lp-line1>.lp-circle2{
+	width:0.22rem;
+	float:left;
+	margin-top:0.9rem;
+	margin-left:0.24rem;
+	display:none;
+}
+.lp-body>.lp-line1>.lp-shangpin{
+	width:1.7rem;
+	float:left;
+	margin-left:0.1rem;
+	margin-top:0.1rem;
+	box-shadow:0 0 0.04rem 0 #dcd6d6;
+}
+.lp-body>.lp-line1>.lp-message{
+	float:left;
+	margin-left:0.36rem;
+	
+}
+.lp-body>.lp-line1>.lp-message>.letter{
+	font-size:0.24rem;
+	color:#3f4247;
+	margin-top:0.24rem;
+	margin-left:0.04rem;
+}
+.lp-body>.lp-line1>.lp-message>.letter>span:first-child{
+	font-weight:bold;
+}
+.lp-body>.lp-line1>.lp-message>.en{
+	width:1.99rem;
+	margin-top:0.1rem;
+}
+.lp-body>.lp-line1>.lp-message>.lp-star{
+	margin-top:0.1rem;
+}
+.lp-body>.lp-line1>.lp-message>.lp-star>img{
+	width:0.24rem;
+}
+.lp-body>.lp-line1>.lp-message>.lp-datail>img{
+	height:0.29rem;
+}
+.lp-body>.lp-line1>.lp-message>.lp-datail>.bg2{
+	height:0.38rem;
+	height:0.29rem;
+	margin-left:0.24rem;
+}
+.lp-body>.lp-line1>.lp-message>.lp-datail>.lp-jiu{
+	font-size:0.14rem;
+	color:#3f4247;
+	position:absolute;
+	top:1.37rem;
+	left:2.7rem;
+}
+.lp-body>.lp-line1>.lp-message>.lp-datail>.lp-create{
+	font-size:0.14rem;
+	color:#3f4247;
+	position:absolute;
+	top:1.37rem;
+	left:3.65rem;
+}
+.lp-body>.lp-line1>.lp-money{
+	float:right;
+	width:1.12rem;
+	height:1.2rem;
+	margin-right:0;
+	margin-top:0.45rem;
+	margin-right:0.24rem;
+}
+.lp-body>.lp-line1>.lp-money>.lp-qian{
+	font-size:0.48rem;
+	color:#f81e3d;
+}	
+.lp-body>.lp-line1>.lp-money>img{
+	margin-top:0.04rem;
+	width:1.1rem;
+}
+.lp-body>.lp-line1>.lp-money>.lp-store{
+	margin-top:0.04rem;
+}
+.lp-body>.lp-line1>.lp-money>.lp-store>img{
+	float:left;
+	width:0.3rem;
+	
+}
+.lp-body>.lp-line1>.lp-money>.lp-store>span{
+	float:left;
+	width:0.62rem;
+	height:0.25rem;
+	border-radius:0.5rem;
+	background:#d6d6d6;
+	font-size:0.14rem;
+	text-align:center;
+	line-height:0.25rem;
+	margin-left:0.16rem;
+	margin-top:0.03rem;
+	color:#3f4247;
+}
+/*active*/
+.lp-body>.active>.lp-circle1{
+	display:none;
+}
+.lp-body>.active>.lp-circle2{
+	display:block;
+}
+/*分割线*/
+.lp-body>.lp-line{
+	position:relative;
+	width:6.9rem;
+	height:0.03rem;
+	left:0.24rem;
+	top:0.04rem;
+}
+.lp-body>.lp-line>.quan1{
+	width:0.03rem;
+	height:0.03rem;
+	border-radius:50%;
+	background:#717883;
+	position:absolute;
+	top:0;
+	left:0;
+}
+.lp-body>.lp-line>.rect{
+	width:6.92rem;
+	height:0.02rem;
+	background:#d9dadc;
+	position:absolute;
+	top:0.01rem;
+	left:0;
+}
+.lp-body>.lp-line>.quan2{
+	width:0.03rem;
+	height:0.03rem;
+	border-radius:50%;
+	background:#717883;
+	position:absolute;
+	top:0;
+	right:0;
+}
+/*支付*/
+.lp-body>.lp-pay{
+	float:right;
+	width:2.82rem;
+	height:1.18rem;
+	margin-right:0.36rem;
+	margin-top:0.53rem;
+}
+.lp-body>.lp-pay>.lp-hang1>img{
+	height:0.24rem;
+	margin-left:0.66rem;
+}
+.lp-body>.lp-pay>.lp-hang1>span{
+	font-size:0.22rem;
+	margin-left:0.03rem;
+}
+.lp-body>.lp-pay>.lp-hang2>span{
+	font-size:0.48rem;
+	color:#3e3e43;
+	margin-left:0.77rem;
+	margin-top:0.14rem;
+}
+.lp-body>.lp-pay>.lp-hang2>img{
+	height:0.24rem;
+	margin-top:0.35rem;
+}
+.lp-body>.lp-pay>.lp-hang3{
+	margin-top:0.1rem;
+}
+.lp-body>.lp-pay>.lp-hang3>span{
+	margin-left:0.04rem;
+	color:#b6b6b6;
+	font-size:0.22rem;
+}
+.lp-footer{
+	display:block;
+	width:100%;
+	height:1rem;
+	background:#f62466;
+	position:fixed;
+	left:0;
+	bottom:0;
+	text-align:center;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.lp-footer>img{
+	height:0.48rem;
+}
