@@ -27,7 +27,7 @@
   height: 0.4rem;
   position: absolute;
   top: 0.2rem;
-  left: 3.5rem;
+  left: 3.2rem;
   font-size: 0.24rem;
   font-family: '微软雅黑';
   color: white;
@@ -39,7 +39,7 @@
   height: 0.4rem;
   position: absolute;
   top: 0.5rem;
-  left: 3rem;
+  left: 3.1rem;
   font-size: 0.18rem;
   font-family: hlvetica Neue LT Pro;
   color: #FF6589;
@@ -438,7 +438,7 @@
 }
 
 .bottom span {
-  margin-top: -0.05rem;
+  margin-top: -0.15rem;
   font-size: 0.18rem;
   color: #FF7799;
 }
