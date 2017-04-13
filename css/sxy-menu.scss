@@ -4,7 +4,6 @@
 body{
     background-image: url(../img/sxy/sxy-mebg.png);
     background-size: cover;
-    overflow: hidden;
 }
 //头部开始
 header {
@@ -83,7 +82,6 @@ header .search >a:last-child img{
     display: flex;
     flex-wrap: wrap;
     margin-top: 4.7rem;
-    margin-bottom: 1rem;
     padding: 0 0.1rem;
     justify-content: space-between;
     a{
