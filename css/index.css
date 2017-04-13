@@ -176,6 +176,9 @@ header .search >a:last-child img{
 .sxy-remmend{
 	width: 100%;
 }
+.sxy-remmend a {
+	display: block;
+}
 .sxy-remmend .bg{
 	width: 100%;
 	height: 2.64rem;
@@ -183,9 +186,55 @@ header .search >a:last-child img{
 	background-size: cover;
 	margin: 0.1rem 0;
 }
-.sxy-remmend .bg img{
-	height: 2.64rem;
-	margin-left: .6rem;
+.sxy-remmend .bg a > img{
+	width: 1.6rem;
+	margin-top: .25rem;
+	margin-left: .4rem;
+	float: left;
+}
+.sxy-remmend .bg .sxy-content{
+	width: 4.4rem;
+	height: 2.60rem;
+	margin-left: .2rem;
+	float: left;
+	padding: .3rem 0;
+}
+.sxy-remmend .bg .sxy-content >p{
+	font-size: .24rem;
+}
+.sxy-remmend .bg .sxy-content >p >span:first-child{
+	color: #f81e3d;
+}
+.sxy-remmend .bg .sxy-content >p >span:last-child{
+	color: #000;
+}
+.sxy-remmend .bg .sxy-content >img{
+	width: 1.42rem;
+	height: 0.17rem;
+}
+.sxy-remmend .bg .sxy-content >pre{
+	font-size: .2rem;
+	color: #000;
+	margin: .1rem 0;
+}
+.sxy-remmend .bg .sxy-content >div{
+	font-size: .2rem;
+}
+.sxy-remmend .bg .sxy-content >div >span:first-child{
+	color: #000;
+}
+.sxy-remmend .bg .sxy-content >div >span:last-child{
+	color: #000;
+	font-weight: 700;
+}
+.sxy-remmend .bg .sxy-content >h3 >span:first-child{
+	color: #f81e3d;
+	font-size: .3rem;
+}
+.sxy-remmend .bg .sxy-content >h3 >span:last-child{
+	color: #b6b6b6;
+	font-size: .18rem;
+	font-weight: 400;
 }
 /*推荐结束*/
 /*Tab栏开始*/
