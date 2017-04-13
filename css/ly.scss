@@ -3,19 +3,26 @@
   height:2rem;
   background:#F62466;
   position:relative;
+
 }
+
 .return{
-  width:0.4rem;
-  height:0.4rem;
+  width:0.5rem;
+  height:0.5rem;
   background-image: url(../img/ly/zfhx_04.png);
-  background-size: contain;
+  background-size: 0.5rem 0.5rem;
   position:relative;
   left:0.25rem;
   top:0.3rem;
+  a{
+    display:block;
+    width:0.5rem;
+    height:0.5rem;
+  }
 }
 .top>p{
-  width:0.65rem;
-  height:0.2rem;
+  width:1.3rem;
+  height:0.4rem;
   position:absolute;
   top:0.2rem;
   left:3.5rem;
@@ -25,24 +32,29 @@
 }
 .top>span {
   dispaly:block;
-  width: 1.1rem;
-  height: 0.2rem;
+  width: 2.2rem;
+  height: 0.4rem;
   position: absolute;
   top: 0.5rem;
-  left: 2.9rem;
+  left: 2.95rem;
   font-size: 0.12rem;
   font-family: hlvetica Neue LT Pro;
   color: #FF6589;
 }
 .list{
-  width:0.4rem;
-  height:0.4rem;
+  width:0.75rem;
+  height:0.5rem;
   background-image: url(../img/ly/zfhx_03.png);
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-size:0.75rem 0.5rem;
+  //background-repeat: no-repeat;
   position:absolute;
   right:0.25rem;
   top:0.3rem;
+  a{
+    display:block;
+    width:0.5rem;
+    height:0.5rem;
+  }
 }
 .middle{
   width:100%;
@@ -92,15 +104,14 @@
 
 
   p{
-
   color:white;
   margin-left:0.7rem;
-  margin-top:0.05rem;
+  margin-top:0.07rem;
   }
   span{
-  font-size:0.2rem;
+  font-size:0.12rem;
     margin-left:0.7rem;
-    margin-top:0.05rem;
+    margin-top:0.04rem;
     color:#FF84A2;
   }
 }
@@ -190,11 +201,12 @@
         margin-top:0.15rem;
       }
       div{
-        width:0.8rem;
+        width:1.4rem;
         height:0.45rem;
-        margin-left:0.25rem;
-        margin-top:0.1rem;
-        font-size: 0.12rem;
+        text-align: center;
+        margin-left:0.15rem;
+        margin-top:0.35rem;
+        font-size: 0.16rem;
       }
     }
   }
@@ -301,7 +313,93 @@
   position: absolute;
   left: 0rem;
   top: 8.2rem;
+  p{
+    font-size: 0.16rem;
+  }
+  div{
+    margin-left:0.7rem;
+    color:#FF7699;
+    font-size: 0.14rem;
+  }
+  .sell{
+     width:6.66rem;
+     height:1.7rem;
+     background:white;
+     border:1px solid #FCFCFB;
+     border-radius:0.05rem;
+     position: absolute;
+     left:-1.1rem;
+     .paimai{
+        width:100%;
+        height:0.7rem;
+
+       margin-left:-0.25rem;
+       margin-top:0.1rem;
+       p{
+         color:#373841;
+       }
+       span{
+         color:#D3CFCC;
+       }
+       .cirone{
+         background:#00EE9F;
+         width:0.1rem;
+         height:0.1rem;
+         border-radius: 50%;
+         float:left;
+         margin-left:1.8rem;
+         margin-top:-0.2rem;
+       }
+       .cirtwo{
+         background:#00EE9F;
+         width:0.1rem;
+         height:0.1rem;
+         border-radius: 50%;
+         float:left;
+         margin-top:-0.2rem;
+         margin-left:2.0rem;
+       }
+       .yjt{
+         width:0.2rem;
+         height:0.3rem;
+         font-family: '宋体';
+         font-size:0.14rem;
+         color:#5A595D;
+         font-weight: bold;
+         float:right;
+         margin-right:0.3rem;
+         margin-top:-0.1rem;
+       }
+     }
+   }
 }
+.bottom{
+  width:100%;
+  height:1rem;
+  background:#FF0054;
+  position:fixed;
+  bottom:0;
+  .tu{
+    width:0.66rem;
+    height:0.66rem;
+    background-image: url(../img/ly/zfhx_05.png);
+    background-size: 0.60rem 0.6rem;
+    background-position: center;
+    float:left;
+    margin-left:2.6rem;
+    margin-top:0.1rem;
+  }
+  p{
+    font-size:0.14rem;
+    margin-top:0.15rem;
+    color:white;
+  }
+  span{
+    font-size:0.14rem;
+    color:#FF7799;
+  }
+}
+
 
 
 
