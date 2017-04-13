@@ -185,8 +185,26 @@ header .search >a:last-child img{
 	background-image: url("../img/sxy/bg-white.png");
 	background-size: cover;
 	margin: 0.1rem 0;
+	position: relative;
 }
-.sxy-remmend .bg a > img{
+.sxy-remmend .bg .sxy-top{
+	width: .9rem;
+	height: 1rem;
+	position: absolute;
+	top: -0.2rem;
+	right: .5rem;
+}
+.sxy-remmend .bg  .sxy-top>img{
+	width: .9rem;
+}
+.sxy-remmend .bg .sxy-discount{
+	width: .68rem;
+	height: .3rem;
+	position: absolute;
+	top: 0.5rem;
+	right: .6rem;
+}
+.sxy-remmend .bg  .sxy-product{
 	width: 1.6rem;
 	margin-top: .25rem;
 	margin-left: .4rem;
@@ -248,7 +266,7 @@ header .search >a:last-child img{
 }
 .sxy-gong .sxy-gong-content{
 	width: 100%;
-	margin-top: -0.6rem;
+	margin-top: -0.7rem;
 	padding: 0 .27rem;
 	display: flex;
 	justify-content: space-between;
