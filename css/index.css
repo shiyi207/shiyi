@@ -237,6 +237,81 @@ header .search >a:last-child img{
 	font-weight: 400;
 }
 /*推荐结束*/
+/*宫格开始*/
+.sxy-gong{
+	width: 100%;
+	height: auto;
+}
+.gird{
+	width: 100%;
+	margin-top: .3rem;	
+}
+.sxy-gong .sxy-gong-content{
+	width: 100%;
+	margin-top: -0.6rem;
+	padding: 0 .27rem;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.sxy-gong .sxy-gong-content .sxy-bg-rect{
+	width: 3.4rem;
+	height: 5.44rem;
+	background-color: #fff;
+	box-shadow: 0 0 .5rem 0 #d4d4d4;
+	border-radius: .2rem;
+	margin: .3rem 0;
+}
+.sxy-gong .sxy-gong-content .sxy-bg-rect >a{
+	display: block;
+	text-align: center;
+} 
+.sxy-gong .sxy-gong-content .sxy-bg-rect >a >img{
+	width: 3.4rem;
+	margin-left: 0.05rem;
+	margin-top: -0.45rem;
+}
+.sxy-gong .sxy-gong-content .sxy-bg-rect > a >h3{
+	margin: 0 auto;
+}
+.sxy-gong .sxy-gong-content .sxy-bg-rect >a  > h3 >span:first-child{
+	color: #f81e3d;
+	font-size: .3rem;
+}
+.sxy-gong .sxy-gong-content .sxy-bg-rect > a >h3 >span:last-child{
+	color: #b6b6b6;
+	font-size: .18rem;
+	font-weight: 400;
+}
+.sxy-gong .sxy-gong-content .sxy-bg-rect > a >div > span:first-child{
+	color: #000;
+	font-size: .3rem ;
+	font-weight: 400;
+} 
+.sxy-gong .sxy-gong-content .sxy-bg-rect > a >div > span:last-child{
+	color: #000;
+	font-size: .2rem ;
+	font-weight: normal;
+} 
+.sxy-gong .sxy-gong-content .sxy-bg-rect > .sxy-love >a{
+	display: block;
+	float: left;
+	padding: 0 .05rem;
+}
+.sxy-bg-rect > .sxy-love >a >img{
+	width: .5rem;
+	float: left;
+	margin-top: .3rem;
+}
+.sxy-bg-rect > .sxy-love >a > div {
+	float: left;
+	margin-top: .3rem;
+}
+.sxy-bg-rect > .sxy-love >a > div >p{
+	color: #f6f6f6;
+	font-size: .18rem;
+}
+/*宫格结束*/
 /*Tab栏开始*/
 footer {
     position: absolute;
