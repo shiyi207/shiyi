@@ -5,16 +5,14 @@ html, body {
 
 .zhc-header {
   width: 100%;
-  height: 1.4rem;
+  height: 1rem;
   background: #e21f56;
 }
 
-.zhc-header .zhc-headertop {
-  width: 100%;
-  height: 0.4rem;
-}
-
 .zhc-header .zhc-headerbottom {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 1rem;
   background: #f62466;
@@ -23,6 +21,7 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 2;
 }
 
 .zhc-header .zhc-headerbottom span {
@@ -45,15 +44,6 @@ html, body {
 
 .zhc-header .zhc-headerbottom a img {
   height: 100%;
-}
-
-.zhc-header .zhc-topxian {
-  width: 100%;
-  height: 0.1rem;
-  background: url(../img/zhc/zhc-topxian_03.png);
-  position: absolute;
-  top: 0.4rem;
-  left: 0;
 }
 
 .zhc-preson {
@@ -177,6 +167,7 @@ html, body {
   font-size: 0.6rem;
   color: #c3d9ff;
   font-weight: 200;
+  text-align: center;
 }
 
 .zhc-actrile .zhc-list {
@@ -349,7 +340,7 @@ html, body {
 .zhc-asdie {
   width: 0.4rem;
   height: auto;
-  position: absolute;
+  position: fixed;
   top: 7.2rem;
   right: 0.28rem;
 }
@@ -361,4 +352,8 @@ html, body {
   text-align: center;
   font-size: 14px;
   color: #9c9c9c;
+}
+
+.zhc-asdie .zhc-active {
+  color: #333;
 }
