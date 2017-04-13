@@ -27,7 +27,7 @@
   height: 0.4rem;
   position: absolute;
   top: 0.2rem;
-  left: 3.2rem;
+  left: 3.3rem;
   font-size: 0.24rem;
   font-family: '微软雅黑';
   color: white;
@@ -116,7 +116,7 @@
   font-size: 0.24rem;
   color: white;
   margin-left: 0.7rem;
-  margin-top: 0.07rem;
+  margin-top: 0.12rem;
 }
 
 .shop span {
@@ -373,7 +373,7 @@
 
 .choose .sell .paimai p {
   color: #373841;
-  margin-top: 0.1rem;
+  margin-top: 0.18rem;
 }
 
 .choose .sell .paimai span {
