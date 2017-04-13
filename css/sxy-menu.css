@@ -105,7 +105,7 @@ header .search > a:last-child img {
 }
 
 footer {
-  position: absolute;
+  position: fixed;
   z-index: 2;
   bottom: 0;
   left: 0;
