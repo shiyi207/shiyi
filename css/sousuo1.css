@@ -1,4 +1,5 @@
 /*@import url("common.css" );*/
+
 @font-face{
 	font-family: '三番';
 	src:url(../font/SF Grandezza Medium.ttf);
@@ -35,6 +36,7 @@ div.bao{
 div.search{
 	width:5.32rem;
 	height:1rem;
+	flex:auto;
 	position: relative;
 	display: flex;
 	align-items: center;
@@ -62,7 +64,7 @@ div.search >input{
 	line-height: 0.44rem;
 	padding-left:0.45rem;
 	color:rgb(117,117,117);
-	font-size: 0.018rem;
+	font-size: 0.18rem;
 }
 div.search >span.xiangji{
 	width:0.42rem;
