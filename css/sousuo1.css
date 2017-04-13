@@ -1,4 +1,4 @@
-@import url("common.css" );
+/*@import url("common.css" );*/
 @font-face{
 	font-family: '三番';
 	src:url(../font/SF Grandezza Medium.ttf);
@@ -10,6 +10,7 @@ div.page{
 	width:100%;
 	height:auto;
 	overflow: hidden;
+	padding-top:1rem;
 }
 div.head{
 	width:100%;
@@ -18,7 +19,10 @@ div.head{
 	background-size:100% auto;
 	display: flex;
 	align-items: center;
-
+	position: fixed;
+	top:0;
+	left:0;
+	z-index: 666;
 }
 div.bao{
 	width:0.8rem;
@@ -219,7 +223,56 @@ div.banner li{
 	margin-left:0.2rem;
 }*/
 div.banner img{
-	width:auto;
-	height:100%;
+	width:100%;
+	height:auto;
 	margin:0 auto;
+}
+div.banner a{
+	display: block;
+	width:100%;
+	height:4.04rem;
+	overflow: hidden;
+	/*margin:0 auto;*/
+}
+div.banner div.like{
+	width:100%;
+	height:0.92rem;
+}
+div.banner div.like >div{
+	width:50%;
+	height:100%;
+	float:left;
+	position: relative;
+	overflow: hidden;
+}
+div.banner div.like >div span{
+	display: block;
+	width:0.46rem;
+	height:0.46rem;
+	position: absolute;
+	left:0.05rem;
+	top:50%;
+	margin-top:-0.23rem;
+}
+div.banner div.like >div:first-of-type span{
+	background: url(../img/zl/sousuo-1333_11.png) no-repeat center;
+	background-size:100%;
+}
+div.banner div.like >div:last-of-type span{
+	background: url(../img/zl/sousuo-1333_13.png) no-repeat center;
+	background-size:100%;
+}
+div.banner div.like >div >div{
+	height:0.4rem;
+	width:100%;
+	margin-top:0.2rem;
+	padding-left:0.5rem;
+
+}
+div.banner div.like >div >div >p{
+	font-size: 0.16rem;
+	color:rgb(182,182,182);
+	line-height:0.2rem;
+	font-family: '三番';
+	letter-spacing: 0rem;
 }
