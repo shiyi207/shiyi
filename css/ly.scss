@@ -26,7 +26,7 @@
   position:absolute;
   top:0.2rem;
   left:3.5rem;
-  font-size:0.14rem;
+  font-size:0.24rem;
   font-family:'微软雅黑';
   color:white;
 }
@@ -36,8 +36,8 @@
   height: 0.4rem;
   position: absolute;
   top: 0.5rem;
-  left: 2.95rem;
-  font-size: 0.12rem;
+  left: 3rem;
+  font-size: 0.18rem;
   font-family: hlvetica Neue LT Pro;
   color: #FF6589;
 }
@@ -110,9 +110,10 @@
   margin-top:0.07rem;
   }
   span{
+    display:block;
     font-size:0.18rem;
     margin-left:0.7rem;
-    margin-top:0.04rem;
+    margin-top:0.02rem;
     color:#FF84A2;
   }
 }
@@ -317,7 +318,7 @@
   top: 8.2rem;
   p{
     font-size: 0.2rem;
-    margin-top:0.05rem;
+    margin-top:0.06rem;
   }
   div{
     margin-top:0.05rem;
@@ -341,6 +342,7 @@
        margin-top:0.1rem;
        p{
          color:#373841;
+         margin-top:0.1rem;
        }
        span{
          color:#D3CFCC;
@@ -352,7 +354,7 @@
          border-radius: 50%;
          float:left;
          margin-left:1.8rem;
-         margin-top:-0.2rem;
+         margin-top:-0.5rem;
        }
        .cirtwo{
          background:#00EE9F;
@@ -360,7 +362,7 @@
          height:0.1rem;
          border-radius: 50%;
          float:left;
-         margin-top:-0.2rem;
+         margin-top:-0.5rem;
          margin-left:2.0rem;
        }
        .yjt{
@@ -391,7 +393,7 @@
     background-position: center;
     float:left;
     margin-left:2.6rem;
-    margin-top:0.1rem;
+    margin-top:0.18rem;
   }
   p{
     font-size:0.3rem;
@@ -399,6 +401,7 @@
     color:white;
   }
   span{
+    margin-top:-0.05rem;
     font-size:0.18rem;
     color:#FF7799;
   }
