@@ -5,18 +5,18 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<title></title>
 	</head>
+	<script type="text/javascript" src="../js/jquery.js" ></script>
+	<script type="text/javascript" src="../js/zhc-preson.js" ></script>
 	<script type="text/javascript" src="../js/common.js" ></script>
 	<link rel="stylesheet" type="text/css" href="../css/common.css"/>
 	<link rel="stylesheet" type="text/css" href="../css/zhc-preson.css" />
 	<body>
 		<header class="zhc-header">
-			<div class="zhc-headertop"></div>
 			<div class='zhc-headerbottom'>
 				<a href="index.html"><img src="../img/zhc/zhc-back_03.png"></a>
 				<span><img src="../img/zhc/zhc-haoyou.png"></span>
 				<a href=""><img src="../img/zhc/zhc-tianjia.png"></a> 
 			</div>
-			<div class="zhc-topxian"></div>
 		</header>
 		<section class="zhc-preson">
 			<div>
@@ -42,7 +42,7 @@
 			</div>
 		</section>
 		<section class="zhc-search">
-			<input type="text" name="search" placeholder="search.." />
+			<input type="text" name="search" placeholder="search.." id="search" />
 			<a href=""><img src="../img/zhc/zhc-search.png" /></a>
 			<a href=""><img src="../img/zhc/zhc-marke.png" /></a>
 		</section>
@@ -54,109 +54,6 @@
 			<section class="zhc-list">
 				<ul>
 					<h3><span>A.</span><span>4</span></h3>
-					<li>
-						<div><a href=""></a></div>
-						<div>
-							<div class="zhc-li-left">
-								<div class="zhc-shufenge"></div>
-								<div class="zhc-le-top">
-									<span>Aim·</span><b>Green</b><img src="../img/zhc/zhc-vip_15.png"/>
-								</div>
-								<div class="zhc-le-mde">
-									<img src="../img/zhc/zhc-star_19.png" />
-									<img src="../img/zhc/zhc-star_19.png" />
-									<img src="../img/zhc/zhc-star_19.png" />
-								</div>
-								<div class="zhc-le-btm">
-									<img src="../img/zhc/zhc-map_22.png" />
-									<span>TAIYUAN</span>
-									<i>SHANXI</i>
-								</div>
-								<div class="zhc-fengexian"><img src="../img/zhc/zhc-fengexian_26.png"></div>
-							</div>
-							<div class="zhc-li-right">
-								<p></p>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div><a href=""></a></div>
-						<div>
-							<div class="zhc-li-left">
-								<div class="zhc-shufenge"></div>
-								<div class="zhc-le-top">
-									<span>Aim·</span><b>Green</b><img src="../img/zhc/zhc-vip_15.png"/>
-								</div>
-								<div class="zhc-le-mde">
-									<img src="../img/zhc/zhc-star_19.png" />
-									<img src="../img/zhc/zhc-star_19.png" />
-									<img src="../img/zhc/zhc-star_19.png" />
-								</div>
-								<div class="zhc-le-btm">
-									<img src="../img/zhc/zhc-map_22.png" />
-									<span>TAIYUAN</span>
-									<i>SHANXI</i>
-								</div>
-								<div class="zhc-fengexian"><img src="../img/zhc/zhc-fengexian_26.png"></div>
-							</div>
-							<div class="zhc-li-right">
-								<p></p>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div><a href=""></a></div>
-						<div>
-							<div class="zhc-li-left">
-								<div class="zhc-shufenge"></div>
-								<div class="zhc-le-top">
-									<span>Aim·</span><b>Green</b><img src="../img/zhc/zhc-vip_15.png"/>
-								</div>
-								<div class="zhc-le-mde">
-									<img src="../img/zhc/zhc-star_19.png" />
-									<img src="../img/zhc/zhc-star_19.png" />
-									<img src="../img/zhc/zhc-star_19.png" />
-								</div>
-								<div class="zhc-le-btm">
-									<img src="../img/zhc/zhc-map_22.png" />
-									<span>TAIYUAN</span>
-									<i>SHANXI</i>
-								</div>
-								<div class="zhc-fengexian"><img src="../img/zhc/zhc-fengexian_26.png"></div>
-							</div>
-							<div class="zhc-li-right">
-								<p></p>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div><a href=""></a></div>
-						<div>
-							<div class="zhc-li-left">
-								<div class="zhc-shufenge"></div>
-								<div class="zhc-le-top">
-									<span>Aim·</span><b>Green</b><img src="../img/zhc/zhc-vip_15.png"/>
-								</div>
-								<div class="zhc-le-mde">
-									<img src="../img/zhc/zhc-star_19.png" />
-									<img src="../img/zhc/zhc-star_19.png" />
-									<img src="../img/zhc/zhc-star_19.png" />
-								</div>
-								<div class="zhc-le-btm">
-									<img src="../img/zhc/zhc-map_22.png" />
-									<span>TAIYUAN</span>
-									<i>SHANXI</i>
-								</div>
-								<div class="zhc-fengexian"><img src="../img/zhc/zhc-fengexian_26.png"></div>
-							</div>
-							<div class="zhc-li-right">
-								<p></p>
-							</div>
-						</div>
-					</li>
-				</ul>
-				<ul>
-					<h3><span>B.</span><span>28</span></h3>
 					<li>
 						<div><a href="zhc-information.html"></a></div>
 						<div>
@@ -188,7 +85,7 @@
 							<div class="zhc-li-left">
 								<div class="zhc-shufenge"></div>
 								<div class="zhc-le-top">
-									<span>Aim·</span><b>Green</b><img src="../img/zhc/zhc-vip_15.png"/>
+									<span>Alan·</span><b>Green</b><img src="../img/zhc/zhc-vip_15.png"/>
 								</div>
 								<div class="zhc-le-mde">
 									<img src="../img/zhc/zhc-star_19.png" />
@@ -213,7 +110,7 @@
 							<div class="zhc-li-left">
 								<div class="zhc-shufenge"></div>
 								<div class="zhc-le-top">
-									<span>Aim·</span><b>Green</b><img src="../img/zhc/zhc-vip_15.png"/>
+									<span>An·</span><b>Green</b><img src="../img/zhc/zhc-vip_15.png"/>
 								</div>
 								<div class="zhc-le-mde">
 									<img src="../img/zhc/zhc-star_19.png" />
@@ -238,7 +135,213 @@
 							<div class="zhc-li-left">
 								<div class="zhc-shufenge"></div>
 								<div class="zhc-le-top">
-									<span>Aim·</span><b>Green</b><img src="../img/zhc/zhc-vip_15.png"/>
+									<span>Aby·</span><b>Green</b><img src="../img/zhc/zhc-vip_15.png"/>
+								</div>
+								<div class="zhc-le-mde">
+									<img src="../img/zhc/zhc-star_19.png" />
+									<img src="../img/zhc/zhc-star_19.png" />
+									<img src="../img/zhc/zhc-star_19.png" />
+								</div>
+								<div class="zhc-le-btm">
+									<img src="../img/zhc/zhc-map_22.png" />
+									<span>TAIYUAN</span>
+									<i>SHANXI</i>
+								</div>
+								<div class="zhc-fengexian"><img src="../img/zhc/zhc-fengexian_26.png"></div>
+							</div>
+							<div class="zhc-li-right">
+								<p></p>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul>
+					<h3><span>B.</span><span>28</span></h3>
+					<li>
+						<div><a href="zhc-information.html"></a></div>
+						<div>
+							<div class="zhc-li-left">
+								<div class="zhc-shufenge"></div>
+								<div class="zhc-le-top">
+									<span>Bim·</span><b>Green</b><img src="../img/zhc/zhc-vip_15.png"/>
+								</div>
+								<div class="zhc-le-mde">
+									<img src="../img/zhc/zhc-star_19.png" />
+									<img src="../img/zhc/zhc-star_19.png" />
+									<img src="../img/zhc/zhc-star_19.png" />
+								</div>
+								<div class="zhc-le-btm">
+									<img src="../img/zhc/zhc-map_22.png" />
+									<span>TAIYUAN</span>
+									<i>SHANXI</i>
+								</div>
+								<div class="zhc-fengexian"><img src="../img/zhc/zhc-fengexian_26.png"></div>
+							</div>
+							<div class="zhc-li-right">
+								<p></p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div><a href=""></a></div>
+						<div>
+							<div class="zhc-li-left">
+								<div class="zhc-shufenge"></div>
+								<div class="zhc-le-top">
+									<span>Bim·</span><b>Green</b><img src="../img/zhc/zhc-vip_15.png"/>
+								</div>
+								<div class="zhc-le-mde">
+									<img src="../img/zhc/zhc-star_19.png" />
+									<img src="../img/zhc/zhc-star_19.png" />
+									<img src="../img/zhc/zhc-star_19.png" />
+								</div>
+								<div class="zhc-le-btm">
+									<img src="../img/zhc/zhc-map_22.png" />
+									<span>TAIYUAN</span>
+									<i>SHANXI</i>
+								</div>
+								<div class="zhc-fengexian"><img src="../img/zhc/zhc-fengexian_26.png"></div>
+							</div>
+							<div class="zhc-li-right">
+								<p></p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div><a href=""></a></div>
+						<div>
+							<div class="zhc-li-left">
+								<div class="zhc-shufenge"></div>
+								<div class="zhc-le-top">
+									<span>Baby·</span><b>Green</b><img src="../img/zhc/zhc-vip_15.png"/>
+								</div>
+								<div class="zhc-le-mde">
+									<img src="../img/zhc/zhc-star_19.png" />
+									<img src="../img/zhc/zhc-star_19.png" />
+									<img src="../img/zhc/zhc-star_19.png" />
+								</div>
+								<div class="zhc-le-btm">
+									<img src="../img/zhc/zhc-map_22.png" />
+									<span>TAIYUAN</span>
+									<i>SHANXI</i>
+								</div>
+								<div class="zhc-fengexian"><img src="../img/zhc/zhc-fengexian_26.png"></div>
+							</div>
+							<div class="zhc-li-right">
+								<p></p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div><a href=""></a></div>
+						<div>
+							<div class="zhc-li-left">
+								<div class="zhc-shufenge"></div>
+								<div class="zhc-le-top">
+									<span>Bg·</span><b>Green</b><img src="../img/zhc/zhc-vip_15.png"/>
+								</div>
+								<div class="zhc-le-mde">
+									<img src="../img/zhc/zhc-star_19.png" />
+									<img src="../img/zhc/zhc-star_19.png" />
+									<img src="../img/zhc/zhc-star_19.png" />
+								</div>
+								<div class="zhc-le-btm">
+									<img src="../img/zhc/zhc-map_22.png" />
+									<span>TAIYUAN</span>
+									<i>SHANXI</i>
+								</div>
+								<div class="zhc-fengexian"><img src="../img/zhc/zhc-fengexian_26.png"></div>
+							</div>
+							<div class="zhc-li-right">
+								<p></p>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul>
+					<h3><span>C.</span><span>28</span></h3>
+					<li>
+						<div><a href="zhc-information.html"></a></div>
+						<div>
+							<div class="zhc-li-left">
+								<div class="zhc-shufenge"></div>
+								<div class="zhc-le-top">
+									<span>Cim·</span><b>Green</b><img src="../img/zhc/zhc-vip_15.png"/>
+								</div>
+								<div class="zhc-le-mde">
+									<img src="../img/zhc/zhc-star_19.png" />
+									<img src="../img/zhc/zhc-star_19.png" />
+									<img src="../img/zhc/zhc-star_19.png" />
+								</div>
+								<div class="zhc-le-btm">
+									<img src="../img/zhc/zhc-map_22.png" />
+									<span>TAIYUAN</span>
+									<i>SHANXI</i>
+								</div>
+								<div class="zhc-fengexian"><img src="../img/zhc/zhc-fengexian_26.png"></div>
+							</div>
+							<div class="zhc-li-right">
+								<p></p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div><a href=""></a></div>
+						<div>
+							<div class="zhc-li-left">
+								<div class="zhc-shufenge"></div>
+								<div class="zhc-le-top">
+									<span>Cs·</span><b>Green</b><img src="../img/zhc/zhc-vip_15.png"/>
+								</div>
+								<div class="zhc-le-mde">
+									<img src="../img/zhc/zhc-star_19.png" />
+									<img src="../img/zhc/zhc-star_19.png" />
+									<img src="../img/zhc/zhc-star_19.png" />
+								</div>
+								<div class="zhc-le-btm">
+									<img src="../img/zhc/zhc-map_22.png" />
+									<span>TAIYUAN</span>
+									<i>SHANXI</i>
+								</div>
+								<div class="zhc-fengexian"><img src="../img/zhc/zhc-fengexian_26.png"></div>
+							</div>
+							<div class="zhc-li-right">
+								<p></p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div><a href=""></a></div>
+						<div>
+							<div class="zhc-li-left">
+								<div class="zhc-shufenge"></div>
+								<div class="zhc-le-top">
+									<span>Cf·</span><b>Green</b><img src="../img/zhc/zhc-vip_15.png"/>
+								</div>
+								<div class="zhc-le-mde">
+									<img src="../img/zhc/zhc-star_19.png" />
+									<img src="../img/zhc/zhc-star_19.png" />
+									<img src="../img/zhc/zhc-star_19.png" />
+								</div>
+								<div class="zhc-le-btm">
+									<img src="../img/zhc/zhc-map_22.png" />
+									<span>TAIYUAN</span>
+									<i>SHANXI</i>
+								</div>
+								<div class="zhc-fengexian"><img src="../img/zhc/zhc-fengexian_26.png"></div>
+							</div>
+							<div class="zhc-li-right">
+								<p></p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div><a href=""></a></div>
+						<div>
+							<div class="zhc-li-left">
+								<div class="zhc-shufenge"></div>
+								<div class="zhc-le-top">
+									<span>Cc·</span><b>Green</b><img src="../img/zhc/zhc-vip_15.png"/>
 								</div>
 								<div class="zhc-le-mde">
 									<img src="../img/zhc/zhc-star_19.png" />
@@ -261,7 +364,7 @@
 			</section>
 		</section>
 		<ul class="zhc-asdie">
-			<li>A</li>
+			<li class="zhc-active">A</li>
 			<li>B</li>
 			<li>C</li>
 			<li>D</li>
@@ -269,20 +372,9 @@
 			<li>F</li>
 			<li>G</li>
 			<li>H</li>
-			<li>G</li>
+			<li>J</li>
 			<li>K</li>
-			<li>L</li>
 			<li>M</li>
-			<li>N</li>
-			<li>O</li>
-			<li>P</li>
-			<li>Q</li>
-			<li>R</li>
-			<li>S</li>
-			<li>T</li>
-			<li>X</li>
-			<li>Y</li>
-			<li>Z</li>
 		</ul>
 	</body>
 </html>

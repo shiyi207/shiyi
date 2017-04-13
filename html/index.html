@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../css/index.css">
     <script src="../js/common.js"></script>
     <script src="../js/iscroll.js"></script>
+    <script type="text/javascript" src="../js/swiper.js" ></script>
 </head>
 <body>
     <!--头部开始-->
@@ -35,7 +36,25 @@
     <div id="wrapper">
         <div id="scroller">
         	<!--banner开始-->
-        	<div class="sxy-banner"></div>
+        		<!-- Swiper -->
+			    <div class="swiper-container">
+			        <div class="swiper-wrapper">
+			            <img src="../img/sxy/sxy-ban1.png" class="swiper-slide" style="width:620">
+			            <img src="../img/sxy/sxy-ban2.png" class="swiper-slide">
+			            <img src="../img/sxy/sxy-ban3.png" class="swiper-slide">
+			        </div>
+			    </div>
+			    <!-- Initialize Swiper -->
+			    <script>
+			    var swiper = new Swiper('.swiper-container', {
+			        pagination: '.swiper-pagination',
+			        slidesPerView: 1,
+			        paginationClickable: true,
+			        spaceBetween: 30,
+			        freeMode: true,
+			        autoplay:2000,
+			    });
+			    </script>
         	<!--banner结束-->
         	<!--个人信息开始-->
         	<div class="sxy-person">
@@ -214,7 +233,7 @@
 		<a href="" class="active"><img src="../img/sxy/fen1.png" alt="" /></a>
 		<a href=""><img src="../img/sxy/cam2.png" alt="" /></a>
 		<a href=""  class="active"><img src="../img/sxy/cam1.png" alt=""/></a>
-		<a href=""><img src="../img/sxy/mess2.png" alt="" /></a>
+		<a href="zhc-preson.html"><img src="../img/sxy/mess2.png" alt="" /></a>
 		<a href=""  class="active"><img src="../img/sxy/mess1.png" alt=""/></a>
 		<a href=""><img src="../img/sxy/my2.png" alt="" /></a>
 		<a href=""  class="active"><img src="../img/sxy/my1.png" alt=""/></a>
