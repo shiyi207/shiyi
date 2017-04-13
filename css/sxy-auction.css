@@ -7,4 +7,204 @@ header {
   height: 1.4rem;
   background-color: #f62466;
   border-bottom: 10px solid #ff82a8;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.2rem;
+}
+
+header .sxy-paimai {
+  width: 2.25rem;
+  height: 0.63rem;
+  margin-top: 0.3rem;
+}
+
+header a {
+  display: block;
+}
+
+header a img {
+  width: 0.5rem;
+  margin-top: 0.3rem;
+}
+
+.sxy-time {
+  width: 6.36rem;
+  height: 1rem;
+  box-shadow: 0 0 0.05rem 0 #888;
+  background-color: #fff;
+  border-radius: 0.2rem;
+  margin-left: 0.57rem;
+  margin-top: -0.5rem;
+}
+
+.sxy-time .sxy-time-title {
+  height: 1rem;
+  margin-left: 0.2rem;
+  float: left;
+}
+
+.sxy-mao {
+  height: 1rem;
+  padding-left: .3rem;
+  float: left;
+}
+
+.sxy-data {
+  width: 0.72rem;
+  height: 1rem;
+  float: left;
+  margin-left: .3rem;
+  background-image: url(../img/sxy/sxy-time.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #f62466;
+  font-size: 0.36rem;
+  line-height: 1rem;
+  text-align: center;
+}
+
+.sxy-lb {
+  width: 6rem;
+  height: 5.2rem;
+  margin: 0.3rem 0.75rem;
+}
+
+.sxy-infor {
+  width: 100%;
+  height: 1.6rem;
+  padding: 0 0.5rem;
+}
+
+.sxy-infor .sxy-name {
+  float: left;
+}
+
+.sxy-infor .sxy-name p {
+  color: #f62466;
+  font-size: 0.36rem;
+}
+
+.sxy-infor .sxy-name h6 {
+  color: #4b4b58;
+  font-size: 0.36rem;
+  font-weight: normal;
+}
+
+.sxy-infor .sxy-name h5 {
+  color: #000;
+  font-size: 0.32rem;
+  font-weight: normal;
+}
+
+.sxy-infor .sxy-name img {
+  width: 3.14rem;
+  height: 0.14rem;
+}
+
+.sxy-infor .sxy-stars {
+  margin-left: 0.3rem;
+  height: 0.4rem;
+  float: left;
+}
+
+.sxy-infor .sxy-stars img {
+  width: 0.4rem;
+  float: left;
+}
+
+.sxy-infor .sxy-photo {
+  width: 1.54rem;
+  float: right;
+  margin-top: -0.3rem;
+}
+
+.sxy-sale {
+  width: 100%;
+  height: 1rem;
+  padding: 0 0.5rem;
+}
+
+.sxy-sale .sxy-mai {
+  width: 4rem;
+  height: 0.8rem;
+  margin-top: -0.2rem;
+}
+
+.sxy-sale .sxy-mai .chu {
+  float: left;
+  width: 1.6rem;
+  height: 0.54rem;
+  background-image: url(../img/sxy/sxy-shou.png);
+  background-size: cover;
+  line-height: 0.54rem;
+  text-align: center;
+  color: #fff;
+  font-size: 0.24rem;
+}
+
+.sxy-sale .sxy-mai .paimai {
+  float: left;
+  width: 1.6rem;
+  height: 0.54rem;
+  background-image: url(../img/sxy/sxy-chu.png);
+  background-size: cover;
+  line-height: 0.54rem;
+  text-align: center;
+  color: #000;
+  font-size: 0.24rem;
+}
+
+.sxy-sale .sxy-data {
+  width: 4.4rem;
+  height: 0.5rem;
+  display: flex;
+  margin-top: -0.2rem;
+  margin-left: 0.1rem;
+  justify-content: space-between;
+}
+
+.sxy-sale .sxy-data > .sxy-hobby {
+  display: block;
+  width: 1.5rem;
+  height: 0.4rem;
+  float: left;
+}
+
+.sxy-hobby > img {
+  width: 0.35rem;
+  float: left;
+  margin-right: 0.1rem;
+  margin-top: 0.3rem;
+}
+
+.sxy-hobby > #sxy-shu {
+  color: #99999a;
+  font-size: 0.26rem;
+  float: left;
+}
+
+.sxy-rmb {
+  width: 1.5rem;
+  height: 1rem;
+  float: left;
+  margin-top: -0.55rem;
+}
+
+.sxy-rmb h4 {
+  color: #f81e3d;
+  font-size: 0.4rem;
+  float: left;
+}
+
+.sxy-rmb h5 {
+  color: #f81e3d;
+  font-size: 0.3rem;
+  float: left;
+  margin-top: 0.1rem;
+}
+
+.sxy-rmb p {
+  color: #b6b6b6;
+  font-size: 0.3rem;
+  margin-right: 0.08rem;
 }
