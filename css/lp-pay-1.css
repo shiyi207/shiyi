@@ -1,3 +1,6 @@
+body{
+	background:#f7f7f7;	
+}
 /*nav*/
 .lp-header{
 	width:100%;
@@ -20,7 +23,12 @@
 	width:100%;
 	display:inline-block;
 }
-.lp-header>.lp-container>img:nth-child(1){
+.lp-header>.lp-container>a{
+	display:inline-block;
+	width:0.34rem;
+	height:1rem;
+}
+.lp-header>.lp-container>a>img:nth-child(1){
 	width:0.34rem;
 }
 .lp-header>.lp-container>img:nth-child(2){
@@ -31,10 +39,12 @@
 }
 /*line1*/
 .lp-body{
-	background:#f7f7f7;	
+	/*background:#f7f7f7;	
 	height:13.14rem;
 	padding-top:1rem;
-	box-sizing:border-box;
+	box-sizing:border-box;*/
+	margin-top:1rem;
+	margin-bottom:1rem;
 }
 .lp-body>.lp-line1{
 	margin-top:0.1rem;	
@@ -42,6 +52,9 @@
 	height:1.94rem;
 	width:100%;
 	position:relative;
+}
+.lp-body>.lp-line1:first-child{
+	margin-top:1.2rem;
 }
 .lp-body>.lp-line1>.lp-circle1{
 	width:0.22rem;
@@ -107,7 +120,7 @@
 	color:#3f4247;
 	position:absolute;
 	top:1.37rem;
-	left:3.65rem;
+	left:3.72rem;
 }
 .lp-body>.lp-line1>.lp-money{
 	float:right;
@@ -223,6 +236,7 @@
 	color:#b6b6b6;
 	font-size:0.22rem;
 }
+/*底部*/
 .lp-footer{
 	display:block;
 	width:100%;
