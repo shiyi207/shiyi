@@ -1,6 +1,11 @@
 *{
     box-sizing: border-box;
 }
+.sxy-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
 //头部
 header{
     width: 100%;
@@ -181,10 +186,10 @@ header{
     float: left;
     margin-top: 0.1rem;
 }
-.sxy-rmb p{
+.sxy-rmb >p{
     color: #b6b6b6;
     font-size: 0.3rem;
-    margin-right: 0.08rem;
+    margin-right: 0.12rem;
 }
 //忆物推荐
 .sxy-yiwu{
@@ -258,7 +263,6 @@ header{
     height: 0.15rem;
 }
 .yiwu-left>.yiwu-posi{
-    margin-top: 0.1rem;
     float: left;
 }
 .yiwu-left>.yiwu-posi>img{

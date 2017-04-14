@@ -2,6 +2,12 @@
   box-sizing: border-box;
 }
 
+.sxy-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 header {
   width: 100%;
   height: 1.4rem;
@@ -203,10 +209,10 @@ header a img {
   margin-top: 0.1rem;
 }
 
-.sxy-rmb p {
+.sxy-rmb > p {
   color: #b6b6b6;
   font-size: 0.3rem;
-  margin-right: 0.08rem;
+  margin-right: 0.12rem;
 }
 
 .sxy-yiwu {
@@ -293,7 +299,6 @@ header a img {
 }
 
 .yiwu-left > .yiwu-posi {
-  margin-top: 0.1rem;
   float: left;
 }
 
