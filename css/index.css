@@ -101,9 +101,20 @@ header .search >a:last-child img{
     text-size-adjust: none;
 }*/
 /*banner开始*/
-.sxy-banner{
+body .swiper-container {
+	margin-top: 1rem;
 	width: 100%;
-	height: 2rem;
+	overflow: hidden;
+	height: 4.4rem;
+}
+.swiper-wrapper{
+	width: 25rem;
+	height: 4.4rem;
+}
+.swiper-slide{
+	float: left;
+	width: 7.5rem;
+	height: 4.4rem;
 }
 /*banner结束*/
 /*个人信息开始*/

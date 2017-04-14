@@ -3,14 +3,15 @@
   font-family: '三番';
 }
 
-div.page {
+div.zl-page {
   width: 100%;
   height: auto;
   overflow: hidden;
   padding-top: 1rem;
+  background: #fafafa;
 }
 
-div.head {
+div.zl-head {
   width: 100%;
   height: 1rem;
   background: url(../img/zl/nav_03.png) no-repeat 0px -0.06rem;
@@ -23,7 +24,7 @@ div.head {
   z-index: 666;
 }
 
-div.bao {
+div.zl-bao {
   width: 0.8rem;
   height: 0.5rem;
   margin-left: 0.24rem;
@@ -32,7 +33,7 @@ div.bao {
   background-size: 100%;
 }
 
-div.search {
+div.zl-search {
   width: 5.32rem;
   height: 1rem;
   position: relative;
@@ -41,7 +42,7 @@ div.search {
   align-items: center;
 }
 
-div.search > span.sousuo {
+div.zl-search > span.zl-sousuo {
   width: 0.3rem;
   height: 0.3rem;
   position: absolute;
@@ -53,7 +54,7 @@ div.search > span.sousuo {
   background-size: 100%;
 }
 
-div.search > input {
+div.zl-search > input {
   /*display: block;*/
   width: 100%;
   height: 0.44rem;
@@ -67,7 +68,7 @@ div.search > input {
   font-size: 0.18rem;
 }
 
-div.search > span.xiangji {
+div.zl-search > span.zl-xiangji {
   width: 0.42rem;
   height: 0.42rem;
   position: absolute;
@@ -79,7 +80,7 @@ div.search > span.xiangji {
   background-size: 100%;
 }
 
-div.shaixuan {
+div.zl-shaixuan {
   width: 0.52rem;
   height: 0.52rem;
   margin-left: 0.19rem;
@@ -88,7 +89,7 @@ div.shaixuan {
   background-size: 100%;
 }
 
-div.caption1 {
+div.zl-caption1 {
   width: 100%;
   height: 1.65rem;
   background: url(../img/zl/sousuo-2_02.png) no-repeat 0 0;
@@ -96,7 +97,7 @@ div.caption1 {
   margin-bottom: 0.1rem;
 }
 
-div.caption2 {
+div.zl-caption2 {
   width: 100%;
   height: 1.65rem;
   background: url(../img/zl/sousuo-2_05.png) no-repeat 0 0;
@@ -104,7 +105,7 @@ div.caption2 {
   margin-bottom: 0.1rem;
 }
 
-div.result {
+div.zl-result {
   height: 0.6rem;
   width: 100%;
   line-height: 0.6rem;
@@ -113,7 +114,7 @@ div.result {
   padding-left: 0.3rem;
 }
 
-div.result span {
+div.zl-result span {
   display: inline-block;
   background: #f62466;
   width: 0.1rem;
@@ -122,7 +123,7 @@ div.result span {
   margin-right: 0.05rem;
 }
 
-div.show {
+div.zl-show {
   width: 6.6rem;
   height: 3.8rem;
   margin-left: 0.3rem;
@@ -133,7 +134,7 @@ div.show {
   margin-bottom: 1.85rem;
 }
 
-div.show div.seller {
+div.zl-show div.zl-seller {
   width: 5.64rem;
   height: 2.06rem;
   position: absolute;
@@ -146,13 +147,13 @@ div.show div.seller {
   border-radius: 0.05rem;
 }
 
-div.show div.seller div.content {
+div.zl-show div.zl-seller div.zl-content {
   float: left;
   width: 3.94rem;
   height: 100%;
 }
 
-div.show div.seller div.content h6 {
+div.zl-show div.zl-seller div.zl-content h6 {
   font-size: 0.24rem;
   line-height: 0.24rem;
   margin-top: 0.35rem;
@@ -160,12 +161,12 @@ div.show div.seller div.content h6 {
   padding-left: 0.36rem;
 }
 
-div.show div.seller div.content h6 b {
+div.zl-show div.zl-seller div.zl-content h6 b {
   color: #f81e3d;
   font-size: 0.24rem;
 }
 
-div.show div.seller div.content div.line {
+div.zl-show div.zl-seller div.zl-content div.zl-line {
   height: 0.33rem;
   line-height: 0.25rem;
   color: #d0d0d0;
@@ -173,12 +174,12 @@ div.show div.seller div.content div.line {
   font-size: 0.18rem;
 }
 
-div.show div.seller div.content div.line b {
+div.zl-show div.zl-seller div.zl-content div.zl-line b {
   color: #3f4247;
   font-size: 0.18rem;
 }
 
-div.show div.seller div.content p {
+div.zl-show div.zl-seller div.zl-content p {
   height: 0.48rem;
   line-height: 0.24rem;
   color: #171717;
@@ -186,11 +187,11 @@ div.show div.seller div.content p {
   font-size: 0.2rem;
 }
 
-div.show div.seller div.content div.bottom {
+div.zl-show div.zl-seller div.zl-content div.zl-bottom {
   height: 0.66rem;
 }
 
-div.show div.seller div.content div.bottom div {
+div.zl-show div.zl-seller div.zl-content div.zl-bottom div {
   width: 50%;
   height: 100%;
   float: left;
@@ -199,16 +200,16 @@ div.show div.seller div.content div.bottom div {
   justify-content: center;
 }
 
-div.show div.seller div.content div.bottom div span {
+div.zl-show div.zl-seller div.zl-content div.zl-bottom div span {
   width: 0.46rem;
   height: 0.46rem;
 }
 
-div.show div.seller div.content div.bottom div span img {
+div.zl-show div.zl-seller div.zl-content div.zl-bottom div span img {
   width: 100%;
 }
 
-div.show div.seller div.content div.bottom div p {
+div.zl-show div.zl-seller div.zl-content div.zl-bottom div p {
   color: #909090;
   font-size: 0.2rem;
   height: 0.66rem;
@@ -216,59 +217,59 @@ div.show div.seller div.content div.bottom div p {
   padding: 0;
 }
 
-div.show div.seller div.user {
+div.zl-show div.zl-seller div.zl-user {
   width: 1.7rem;
   height: 100%;
   float: left;
   text-align: center;
 }
 
-div.show div.seller div.user div.touxiang {
+div.zl-show div.zl-seller div.zl-user div.zl-touxiang {
   height: 1.25rem;
 }
 
-div.show div.seller div.user div.touxiang img {
+div.zl-show div.zl-seller div.zl-user div.zl-touxiang img {
   width: 100%;
 }
 
-div.show div.seller div.user p {
+div.zl-show div.zl-seller div.zl-user p {
   font-size: 0.24rem;
   color: #626262;
 }
 
-div.show div.seller div.user p b {
+div.zl-show div.zl-seller div.zl-user p b {
   font-size: 0.24rem;
 }
 
-div.show div.seller div.user ul {
+div.zl-show div.zl-seller div.zl-user ul {
   padding-left: 0.2rem;
 }
 
-div.show div.seller div.user ul li {
+div.zl-show div.zl-seller div.zl-user ul li {
   width: 0.18rem;
   height: 0.18rem;
   margin-left: 0.1rem;
   float: left;
 }
 
-div.show div.seller div.user ul li img {
+div.zl-show div.zl-seller div.zl-user ul li img {
   width: 100%;
 }
 
-div.banner {
+div.zl-banner {
   width: 100%;
   height: 3.28rem;
   margin-bottom: 0.4rem;
 }
 
-div.banner ul li {
+div.zl-banner ul li {
   width: 2.4rem;
   height: 100%;
-  border: 1px solid rgba(144, 144, 144, 0.3);
+  background: white;
   position: relative;
 }
 
-div.banner ul li h6 {
+div.zl-banner ul li h6 {
   width: 0.5rem;
   height: 0.34rem;
   line-height: 0.34rem;
@@ -285,16 +286,16 @@ div.banner ul li h6 {
   font-weight: 400;
 }
 
-div.banner ul li a {
+div.zl-banner ul li a {
   display: block;
   height: 239;
 }
 
-div.banner ul li a img {
+div.zl-banner ul li a img {
   width: 100%;
 }
 
-div.banner ul li p:first-of-type {
+div.zl-banner ul li p:first-of-type {
   height: 0.36rem;
   line-height: 0.36rem;
   color: #f81e3d;
@@ -302,13 +303,13 @@ div.banner ul li p:first-of-type {
   text-align: center;
 }
 
-div.banner ul li p:first-of-type span {
+div.zl-banner ul li p:first-of-type span {
   color: #b6b6b6;
   font-family: '三番';
   font-size: 0.18rem;
 }
 
-div.banner ul li p:last-of-type {
+div.zl-banner ul li p:last-of-type {
   height: 0.34rem;
   line-height: 0.34rem;
   color: #3f4247;
@@ -316,11 +317,11 @@ div.banner ul li p:last-of-type {
   font-size: 0.30rem;
 }
 
-div.banner ul li p:last-of-type b {
+div.zl-banner ul li p:last-of-type b {
   font-size: 0.30rem;
 }
 
-div.banner ul li div.mark {
+div.zl-banner ul li div.zl-mark {
   height: 0.57rem;
   display: flex;
   align-items: center;
