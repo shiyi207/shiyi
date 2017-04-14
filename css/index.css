@@ -82,7 +82,7 @@ header .search >a:last-child img{
 	width: 100%;
 }
 /*头部结束*/
-#wrapper {
+/*#wrapper {
     position: absolute;
     z-index: 1;
     top: 1rem;
@@ -99,9 +99,10 @@ header .search >a:last-child img{
     transform: translateZ(0);
     user-select: none;
     text-size-adjust: none;
-}
+}*/
 /*banner开始*/
 body .swiper-container {
+	margin-top: 1rem;
 	width: 100%;
 	overflow: hidden;
 	height: 4.4rem;
