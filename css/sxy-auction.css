@@ -208,3 +208,130 @@ header a img {
   font-size: 0.3rem;
   margin-right: 0.08rem;
 }
+
+.sxy-yiwu {
+  padding: 0 0.4rem;
+}
+
+.sxy-yiwu .yiwu-title {
+  width: 4.72rem;
+  height: 1.52rem;
+}
+
+.sxy-yiwu .sxy-reload {
+  display: inline-block;
+  width: 1.35rem;
+  height: 0.87rem;
+}
+
+.sxy-yiwu .sxy-reload img {
+  width: 1.35rem;
+  margin-bottom: 0.2rem;
+  margin-left: 0.5rem;
+}
+
+.yiwu-content {
+  width: 100%;
+  padding: 0 0.3rem;
+  z-index: -1;
+}
+
+.yiwu-content .yiwu-bg {
+  width: 6.9rem;
+}
+
+.yiwu-bgrect {
+  margin-left: 0.3rem;
+  width: 6.9rem;
+  height: 2.26rem;
+  margin-top: -1rem;
+  position: relative;
+  margin-bottom: 0.3rem;
+}
+
+.yiwu-bgrect img {
+  width: 6.9rem;
+}
+
+.sxy-bg-content {
+  width: 5.5rem;
+  height: 2.26rem;
+  margin-left: 0.7rem;
+  position: absolute;
+  left: 0;
+  top: 0.1rem;
+  z-index: 9999;
+}
+
+.sxy-bg-content .yiwu-left {
+  float: left;
+  padding-left: 0.2rem;
+  padding-top: 0.1rem;
+  width: 3.8rem;
+}
+
+.sxy-bg-content .yiwu-right {
+  width: 1.5rem;
+  float: right;
+  margin-left: 0.1rem;
+}
+
+.yiwu-left > .yiwu-ka > p:first-child {
+  color: #fa707e;
+  font-size: 0.24rem;
+  float: left;
+}
+
+.yiwu-left > .yiwu-ka > p:last-child {
+  color: #000;
+  font-size: 0.24rem;
+}
+
+.yiwu-left > img {
+  width: 1.44rem;
+  height: 0.15rem;
+}
+
+.yiwu-left > .yiwu-posi {
+  margin-top: 0.1rem;
+  float: left;
+}
+
+.yiwu-left > .yiwu-posi > img {
+  float: left;
+  width: 0.56rem;
+}
+
+.yiwu-left > .yiwu-posi > p {
+  line-height: 0.56rem;
+  float: left;
+  font-size: 0.2rem;
+  color: #909090;
+  padding-right: 0.1rem;
+}
+
+.yiwu-right > img {
+  width: 1.2rem;
+}
+
+.yiwu-right > div > p:first-child {
+  color: #626162;
+  font-size: 0.24rem;
+  float: left;
+}
+
+.yiwu-right > div > p:last-child {
+  color: #626162;
+  font-weight: bold;
+  font-size: 0.24rem;
+}
+
+.yiwu-right > .xing {
+  margin-top: 0.1rem;
+  margin-left: 0.3rem;
+}
+
+.yiwu-right > .xing > img {
+  width: 0.25rem;
+  float: left;
+}
