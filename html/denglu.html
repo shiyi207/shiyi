@@ -187,9 +187,9 @@
 		<form action="" id="aa">
 			<img src="../img/lg/kk_07.png" alt="" class="yh"/> 
 			<span class="yhm">ACCOUNT</span>
-			<input type="text" name="zhanghao" id="text" class="input1" value="请输入">
+			<input type="text" name="zhanghao" id="text" class="input1" placeholder="请输入账号或者手机号邮箱">
         <img src="../img/lg/kk_11.png" alt="" class="pass"/>
-        <span class="mm">PASSWORD</span><input type="password" name="mima" id="pass" class="input2" value="请输入密码">
+        <span class="mm">PASSWORD</span><input type="password" name="mima" id="pass" class="input2" placeholder="请输入密码">
 		</form>
 	</div>
 	<input   type="radio"   id="cat"   name="cat"   value="1"   onclick= "if(this.c==1){this.c=0;this.checked=0}else{this.c=1}"   c="0"/>
@@ -209,35 +209,6 @@
 </body>
 </html>
 <script>
-	let aa = document.getElementById('aa')
-				let text = document.getElementById('text');
-				text.onfocus=function(){
-					if (text.value=="请输入"){
-						text.value="";
-					}
-				}
-				text.onblur=function(){
-					if(text.value){
-						return;
-					}
-					else{
-						text.value="请输入"
-					}
-				};
-				let pass=document.getElementById('pass');
-				pass.onfocus=function(){
-					if(pass.value=="请输入密码"){
-						pass.value=""
-					}
-				}
-				pass.onblur=function(){
-					if(pass.value){
-						return
-					}else{
-						pass.value="请输入密码"
-					}
-				}
-		
 		$('#aa').validate({
 			 rules:{
             zhanghao: {
