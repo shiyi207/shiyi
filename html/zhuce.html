@@ -9,6 +9,8 @@
     <meta name="format-detection" content="telephone=no, email=no" />
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 	<script src="../js/common.js"></script>
+	<script src="../js/jquery.js"></script>
+	<script src="../js/jquery.validate.js"></script>
 	<title>zhuce</title>
 </head>
 <style>
@@ -254,27 +256,83 @@
 	<span class="wenzi2">answe outh <span>Seak to us of friend</span> needs answe</span>
 	<span class="dian"><span class="dian1">.</span>...................<span class="dian1">.</span></span>
 	<div class="form">
-		<form action="">
+		<form action="" id="aa">
 			<img src="../img/lg/注册_07.png" alt="" class="zc"/>
 			<img src="../img/lg/kk_11.png" alt="" class="pass"/>
 			<span class="mm">mobile phone no</span>
-			<input type="text" class="input2" value="您可以输入您的手机号"/>
+			<input type="text" class="input2" value="您可以输入您的手机号" id="text"/>
 			<img src="../img/lg/line_07.png" alt="" class="line1"/>
 			<img src="../img/lg/kk_11.png" alt="" class="pass1"/>
 			<span class="mm1">PASSWORD</span>
-			<input type="text" class="input3" value="请输入与上次相同的密码"/>
+			<input type="text" class="input3" value="请输入密码" id='text1'/>
 				<img src="../img/lg/line_07.png" alt="" class="line2"/>
 			<img src="../img/lg/kk_11.png" alt="" class="pass2"/>
 			<span class="mm2">PASSWORD</span>
-			<input type="text" class="input4" value="请输入与上次相同的密码"/>	
+			<input type="text" class="input4" value="请输入与上次相同的密码" id="text2"/>	
 			<img src="../img/lg/line_07.png" alt="" class="line"/>
 			<img src="../img/lg/kk_11.png" alt="" class="pass3"/>
 			<span class="mm3">PASSWORD</span>
-			<input type="text" class="input1" value="请输入与上次相同的密码"/>
+			<input type="text" class="input1" value="请输入与上次相同的密码" id="text3"/>
 		</form>
 	</div>
-	<a>
+	<a href="zhuce1.html">
 		<img src="../img/lg/注册按钮_07.png" alt="" class='liji'/>
 	</a>
 </body>
 </html>
+<script>
+	let aa = document.getElementById('aa')
+				let text = document.getElementById('text');
+				text.onfocus=function(){
+					if (text.value=="您可以输入您的手机号"){
+						text.value="";
+					}
+				}
+				text.onblur=function(){
+					if(text.value){
+						return;
+					}
+					else{
+						text.value="您可以输入您的手机号"
+					}
+				};
+				let pass=document.getElementById('text1');
+				pass.onfocus=function(){
+					if(pass.value=="请输入密码"){
+						pass.value=""
+					}
+				}
+				pass.onblur=function(){
+					if(pass.value){
+						return
+					}else{
+						pass.value="请输入密码"
+					}
+				}
+				let pass1=document.getElementById('text2');
+				pass1.onfocus=function(){
+					if(pass1.value=="请输入与上次相同的密码"){
+						pass1.value=""
+					}
+				}
+				pass1.onblur=function(){
+					if(pass1.value){
+						return
+					}else{
+						pass1.value="请输入与上次相同的密码"
+					}
+				}
+				let pass2=document.getElementById('text3');
+				pass2.onfocus=function(){
+					if(pass2.value=="请输入与上次相同的密码"){
+						pass2.value=""
+					}
+				}
+				pass2.onblur=function(){
+					if(pass2.value){
+						return
+					}else{
+						pass2.value="请输入与上次相同的密码"
+					}
+				}
+</script>
