@@ -87,6 +87,7 @@ html, body {
 }
 
 .zhc-header .zhc-zan h1 {
+  position: relative;
   float: left;
   width: 1.4rem;
   height: 0.3rem;
@@ -223,6 +224,7 @@ html, body {
   padding: 0 0.24rem;
   box-sizing: border-box;
   margin-top: 0.2rem;
+  margin-bottom: 1rem;
 }
 
 .zhc-hydt li {

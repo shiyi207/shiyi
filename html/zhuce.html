@@ -9,6 +9,9 @@
     <meta name="format-detection" content="telephone=no, email=no" />
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 	<script src="../js/common.js"></script>
+	<link rel="stylesheet" href="../css/common.css" />
+	<script src="../js/jquery.js"></script>
+	<script src="../js/jquery.validate.js"></script>
 	<title>zhuce</title>
 </head>
 <style>
@@ -20,6 +23,7 @@
 		position: absolute;
 		top: 0.35rem;
 		width: 0.35rem;
+		left: 0.5rem;
 	}
 	.logo{
 		position: absolute;
@@ -60,7 +64,7 @@
 	}
 	.form{
 		width: 6.05rem;
-		height: 6rem;
+		height: 5.3rem;
 		margin-top: 5%;
 		margin-left: 10%;
 		border: 1px solid #d6d6d6;
@@ -77,36 +81,36 @@
 		left: 20%;
 		outline: none;
 		border: none;
-		margin-top: 1rem;
+		margin-top: 3.2rem;
 		width: 75%;
 		font-size: 10px;
-		color: gainsboro;
+		color: black;
 	}
 	.input2{
 		position: relative;
-		top: -20px;
+		top: 25px;
 		width: 75%;
 		left: 22%;
 		outline: none;
 		border: none;
 		height: 40px;
-		color: gainsboro;
+		color: black;
 	}
 	.input3{
 		position: relative;
-		top: -26px;
+		top: 55px;
 		left: 22%;
 		outline: none;
 		border: none;
-		color: gainsboro;
+		color: black;
 	}
 	.input4{
 		position: relative;
-		top: -35px;
-		left: 22%;
+		top: 110px;
+		left: -23%;
 		outline: none;
 		border: none;
-		color: gainsboro;
+		color: black;
 	}
 	.yh{
 		width: 0.56rem;
@@ -117,43 +121,43 @@
 	.line{
 		position: absolute;
 		width: 5.37rem;
-		top: 85%;
+		top: 225%;
 		left: 5%;
 	}
 	.pass{
 		position: absolute;
 		width: 0.56rem;
-		top: 25%;
+		top: 65%;
 		left: 5%;
 	}
 	.pass1{
 		position: absolute;
 		width: 0.56rem;
-		top: 49%;
+		top: 130%;
 		left: 5%;
 	}
 	.pass2{
 		position: absolute;
 		width: 0.56rem;
-		top: 72%;
+		top: 190%;
 		left: 5%;
 	}
 	.pass3{
 		position: absolute;
 		width: 0.56rem;
-		top: 89%;
+		top: 240%;
 		left: 5%;
 	}
 	.line1{
 		position: absolute;
 		width: 5.37rem;
-		top: 42%;
+		top: 115%;
 		left: 5%;
 	}
 	.line2{
 		position: absolute;
 		width: 5.37rem;
-		top: 65%;
+		top: 170%;
 		left: 5%;
 	}
 	.yhm{
@@ -167,7 +171,7 @@
 		position: absolute;
 		font-size: 14px;
 		left: 22%;
-		top: 24%;
+		top: 60%;
 		z-index: 5;
 		color: grey;
 	}
@@ -175,7 +179,7 @@
 		position: absolute;
 		font-size: 14px;
 		left: 22%;
-		top: 47%;
+		top: 125%;
 		z-index: 5;
 		color: grey;
 	}
@@ -183,7 +187,7 @@
 		position: absolute;
 		font-size: 14px;
 		left: 22%;
-		top: 69%;
+		top: 180%;
 		z-index: 5;
 		color: grey;
 	}
@@ -191,7 +195,7 @@
 		position: absolute;
 		font-size: 14px;
 		left: 22%;
-		top: 87%;
+		top: 240%;
 		z-index: 5;
 		color: grey;
 	}
@@ -254,27 +258,83 @@
 	<span class="wenzi2">answe outh <span>Seak to us of friend</span> needs answe</span>
 	<span class="dian"><span class="dian1">.</span>...................<span class="dian1">.</span></span>
 	<div class="form">
-		<form action="">
+		<form action="" id="aa">
 			<img src="../img/lg/注册_07.png" alt="" class="zc"/>
 			<img src="../img/lg/kk_11.png" alt="" class="pass"/>
 			<span class="mm">mobile phone no</span>
-			<input type="text" class="input2" value="您可以输入您的手机号"/>
+			<input type="text" class="input2" placeholder="您可以输入您的手机号" id="text"/>
 			<img src="../img/lg/line_07.png" alt="" class="line1"/>
 			<img src="../img/lg/kk_11.png" alt="" class="pass1"/>
 			<span class="mm1">PASSWORD</span>
-			<input type="text" class="input3" value="请输入与上次相同的密码"/>
+			<input type="text" class="input3" placeholder="请输入密码" id='text1'/>
 				<img src="../img/lg/line_07.png" alt="" class="line2"/>
 			<img src="../img/lg/kk_11.png" alt="" class="pass2"/>
 			<span class="mm2">PASSWORD</span>
-			<input type="text" class="input4" value="请输入与上次相同的密码"/>	
+			<input type="password" class="input4" placeholder="请输入与上次相同的密码" id="text2"/>	
 			<img src="../img/lg/line_07.png" alt="" class="line"/>
 			<img src="../img/lg/kk_11.png" alt="" class="pass3"/>
 			<span class="mm3">PASSWORD</span>
-			<input type="text" class="input1" value="请输入与上次相同的密码"/>
+			<input type="password" class="input1" placeholder="请输入与上次相同的密码" id="text3"/>
 		</form>
 	</div>
-	<a>
+	<a href="zhuce1.html">
 		<img src="../img/lg/注册按钮_07.png" alt="" class='liji'/>
 	</a>
 </body>
 </html>
+<script>
+	let aa = document.getElementById('aa')
+				let text = document.getElementById('text');
+				text.onfocus=function(){
+					if (text.value=="您可以输入您的手机号"){
+						text.value="";
+					}
+				}
+				text.onblur=function(){
+					if(text.value){
+						return;
+					}
+					else{
+						text.value="您可以输入您的手机号"
+					}
+				};
+				let pass=document.getElementById('text1');
+				pass.onfocus=function(){
+					if(pass.value=="请输入密码"){
+						pass.value=""
+					}
+				}
+				pass.onblur=function(){
+					if(pass.value){
+						return
+					}else{
+						pass.value="请输入密码"
+					}
+				}
+				let pass1=document.getElementById('text2');
+				pass1.onfocus=function(){
+					if(pass1.value=="请输入与上次相同的密码"){
+						pass1.value=""
+					}
+				}
+				pass1.onblur=function(){
+					if(pass1.value){
+						return
+					}else{
+						pass1.value="请输入与上次相同的密码"
+					}
+				}
+				let pass2=document.getElementById('text3');
+				pass2.onfocus=function(){
+					if(pass2.value=="请输入与上次相同的密码"){
+						pass2.value=""
+					}
+				}
+				pass2.onblur=function(){
+					if(pass2.value){
+						return
+					}else{
+						pass2.value="请输入与上次相同的密码"
+					}
+				}
+</script>
