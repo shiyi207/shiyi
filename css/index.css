@@ -121,6 +121,7 @@ body .swiper-container {
 .sxy-person{
 	width: 100%;
 	height: .86rem;
+	padding: 0 0.1rem;
 }
 .sxy-person > img:first-child{
 	width: .86rem;
