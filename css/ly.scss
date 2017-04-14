@@ -134,6 +134,7 @@
     p{
       width:1rem;
       height:0.32rem;
+      margin-top:-0.05rem;
       margin-left:0.2rem;
       color:black;
       float:left;
@@ -316,7 +317,7 @@
   top: 8.2rem;
   p{
     font-size: 0.2rem;
-    margin-top:0.06rem;
+    margin-top:0.1rem;
   }
   div{
     margin-top:0.05rem;
@@ -399,12 +400,22 @@
     color:white;
   }
   span{
-    margin-top:-0.15rem;
-    font-size:0.18rem;
+    margin-top:-0.3rem;
+    font-size:0.2rem;
     color:#FF7799;
   }
 }
-
+.zhezhao{
+  width:100%;
+  height:100%;
+  background:#404140;
+  opacity: 0.9;
+  position:fixed;
+  left:0;
+  top:0;
+  z-index:10000;
+  display:none;
+}
 
 
 
