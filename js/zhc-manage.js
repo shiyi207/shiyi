@@ -9,12 +9,4 @@ window.onload=function(){
 			circle.classList.toggle('moves')
 		})
 	})
-//	$().each(function(index,val){
-//		let down=$('.li-right >div',val)
-//		document.addEventListener('touchstart',function(){
-//			$('.zhc-right-full',$(this)).toggleClass('move')
-//			$('.zhc-right-circle',$(this)).toggleClass('moves')
-//		})
-//	})
 }
-

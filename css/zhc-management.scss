@@ -58,7 +58,7 @@ html,body{
         right: 0.3rem
     }
     100%{
-        right: 0.03rem
+        right: 0.08rem
     }
 }
 @mixin lis{
@@ -184,13 +184,13 @@ main{
             position: relative;
             text-align: center;
            >div{
-               width: 0.6rem;
-               height: 0.32rem;
+               width: 0.8rem;
+               height: 0.4rem;
                background: #5d5d6e;
                position: absolute;
                right: 0.2rem;
                top: 50%;
-               margin-top: -0.15rem;
+               margin-top: -0.2rem;
                border-radius: 0.6rem;
                .move{
                    animation: mov 0.2s linear forwards; 
@@ -210,11 +210,11 @@ main{
                .zhc-right-circle{
                    width: 0.24rem;
                    height: 0.24rem;
-                   border-radius: 0.6rem;
+                   border-radius:50%;
                    background: #fff;
                    position: absolute;
-                   right: 0.3rem;
-                   top: 0.03rem;
+                   right: 0.5rem;
+                   top: 0.08rem;
                    transition: right 2s ease;
                }
            }
