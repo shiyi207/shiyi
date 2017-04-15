@@ -1,0 +1,66 @@
+$().ready(function() {
+		$("#signupForm").validate({
+			rules:{
+				user: "required",
+				pass: {
+				    required: true,//必填
+				    minlength: 11,
+				    maxlength: 11
+				},
+				yinhang: {
+				    required: true,//必填
+				    minlength: 19,
+				    maxlength: 19
+				},
+				id: {
+				    required: true,//必填
+				    minlength: 18,
+				    maxlength: 18
+				}
+			},
+			errorPlacement:function(error,val){//一但验证错误就会触发函数，val是jquery对象	
+			 	if(val.next('img').length==0){
+					$('<img>').attr('src','../img/lp/lp-pay-3-11.png').css('width','0.24rem').insertAfter(val);
+			 	}
+			},
+			success:function(error,val){//验证成功触发函数,dom对象		
+			 	if ($('form div img').length!=0){
+					$('form div img').remove();
+			 	}	
+			}
+		})
+		console.log($('.sure1').css('display'))
+		$('.sure1')[0].ontouch =function(){
+			console.log(111)
+			if($('.sure1').css('display')=='none'){
+				$('.sure1').css('display','inline-block');
+				$('.sure2').css('display','none');
+			}else{
+				$('.sure2').css('display','inline-block');
+				$('.sure1').css('display','none');
+			}
+		}
+		$('.sure2')[0].ontouch =function(){
+			if($('.sure2').css('display')=='none'){
+				$('.sure2').css('display','block');
+				$('.sure1').css('display','none');
+			}else{
+				$('.sure1').css('display','block');
+				$('.sure2').css('display','none');
+			}
+		}
+		
+//		$('.sure').each(function(index,dom){
+//			console.log(dom)
+//			dom.each(function(val,index){
+//				val.onclick =function(){
+//					console.log($(this))
+//					if($(this).css('display','none')){
+//						$(this).css('display','block');
+//					}else{
+//						$(this).css('display','none');
+//					}
+//				}
+//			})
+//		})
+	})

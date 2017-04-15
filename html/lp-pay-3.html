@@ -8,9 +8,12 @@
 	<meta name="x5-fullscreen" content="true" />
 	<meta name="full-screen" content="yes">
 	<meta name="format-detection" content="telephone=no, email=no" />
-	<title>拾忆3</title>
+	<title>拾忆-添加银行卡</title>
 </head>
 <script src='../js/common.js'></script>
+<script src='../js/jquery.js'></script>
+<script src='../js/jquery.validate.js'></script>
+<script src='../js/lp-pay-3.js'></script>
 <link rel="stylesheet" href="../css/common.css">
 <link rel="stylesheet" href="../css/lp-pay-3.css">
 <body>
@@ -29,12 +32,27 @@
 	<div class='lp-body'>
 		<img src='../img/lp/lp-pay-3-16.png' class='new'/>
 		<div class='form'>
-			
-		</div>	
+			<form id="signupForm" method="get" action="">
+				<div class='first'>
+					<input type='text' name='user' class='user' placeholder='王可可'/>
+				</div>
+				<div class='second'>
+					<input type='text' name='pass' class='pass' placeholder='请输入在银行里预留的手机号'/>
+				</div>
+				<div class='third'>
+					<input type='text' name='yinhang' class='yinhang' placeholder='中国工商银行'/>
+				</div>
+				<div class='forth'>
+					<input type='text' name='id' class='id' placeholder='246525199'/>
+				</div>
+			</form>
+			<img src='../img/lp/lp-pay-1-13.png' class='sure1 sure active'/>
+			<img src='../img/lp/lp-pay-1-5.png' class='sure2 sure'/>
+		</div>		
 	</div>
 	<!-- 底部 -->
 	<a class='lp-footer' href='javascript:;'>
-		<img src='../img/lp/lp-pay-3-13.png'/>
+		<img src='../img/lp/lp-pay-3-18.png'/>
 	</a>
 </body>
 </html>
