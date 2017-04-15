@@ -91,7 +91,7 @@ main{
             justify-content: space-around;
             div:first-child{
                 height: 0.4rem;
-                width: 100%;
+                width:100%;
                 font-size: 0.24rem;
                 color: #21212c;
             }
@@ -123,4 +123,7 @@ main{
             text-align: center;
         }
     }
+}
+body main .zhc-zl-one .li-left .zhc-color{
+    color:#F62466;
 }
