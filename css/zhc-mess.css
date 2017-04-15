@@ -45,9 +45,13 @@ html, body {
   line-height: 0.5rem;
 }
 
+.zhc-header .zhc-headerbottom a img {
+  height: 100%;
+}
+
 .zhc-header .zhc-headerbottom div {
-  width: 0.66rem;
-  height: 0.5rem;
+  width: 0.7rem;
+  height: 0.7rem;
   float: left;
 }
 
