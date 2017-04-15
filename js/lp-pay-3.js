@@ -24,8 +24,8 @@ $().ready(function() {
 			 	}
 			},
 			success:function(error,val){//验证成功触发函数,dom对象		
-			 	if ($('form div img').length!=0){
-					$('form div img').remove();
+			 	if (val.next('img').length!=0){
+					val.next('img').remove();
 			 	}	
 			}
 		})

@@ -43,8 +43,9 @@ body{
 	/*background:#f7f7f7;	
 	height:13.14rem;
 	box-sizing:border-box;*/
-	padding-bottom:1rem;
+	margin-bottom:1rem;
 	margin-top:1.2rem;
+	overflow:hidden;
 }
 .lp-body>.lp-line1{
 	margin-top:0.1rem;	
@@ -53,9 +54,6 @@ body{
 	width:100%;
 	position:relative;
 }
-/*.lp-body>.lp-line1:first-child{
-	margin-top:1.2rem;
-}*/
 .lp-body>.lp-line1>.lp-circle1{
 	width:0.22rem;
 	float:left;
