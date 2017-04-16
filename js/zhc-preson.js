@@ -1,25 +1,38 @@
 $(document).ready(function(){
 //	联系人数
 	$('.zhc-actop h6').html($('.zhc-list li').length)
-//	$('.zhc-list ul').children().first().children().last().text($('.zhc-list ul li').length)
-//	console.log($('.zhc-list ul'))
 	
-//	$('#search').keyup(function(){
-//		let value=$(this).val()
-//		$('.zhc-list ul').filter('.zhc-le-top span').text('333')
+//	点击左滑
+//$('.zhc-li-right p').each(function(index,value){
+//	value.addEventListener('touchmove',function(){
+//		$(this).css('right','0')
+//		$(this).children().first().css('display','inline-block')
+//		$(this).children('span').css('display','none')
 //	})
-	
-
-		$('.zhc-li-right p').hover(function(){
-			$(this).css('right','0')
-			$(this).children().first().css('display','inline-block')
-			$(this).children('span').css('display','none')
-		},function(){
-			$(this).css('right','-1.6rem')
-			$(this).children().first().css('display','none')
-			$(this).children('span').css('display','inline-block')
+//	value.addEventListener('touchenter',function(){
+//		$(this).css('right','-1.6rem')
+//		$(this).children().first().css('display','none')
+//		$(this).children('span').css('display','inline-block')
+//	})
+//})
+	$('.zhc-li-right p').hover(function(){
+		$(this).css('right','0')
+		$(this).children().first().css('display','inline-block')
+		$(this).children('span').css('display','none')
+	},function(){
+		$(this).css('right','-1.6rem')
+		$(this).children().first().css('display','none')
+		$(this).children('span').css('display','inline-block')
+	})
+//		删除
+	$('.zhc-li-right p img').each(function(index,value){
+		value.addEventListener('touchstart',function(){
+			$(this).parentsUntil('ul').remove()	
 		})
-
+	})
+		
+		
+//	楼层跳转?
 	let arr=$.map($('.zhc-actrile ul'),function(index,val){
 		return index.offsetTop
 	})
