@@ -2,9 +2,17 @@
     padding: 0 0.24rem;
     box-sizing: border-box;
 }
-html,body{
+body{
+    overflow: auto;
+    background-color: #f7f7f7;
+     width: 100%;
     height: 100%;
-    background: #f7f7f7;
+}
+html{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
 }
 //顶部状态加啥啥
 @mixin radus{
@@ -372,7 +380,7 @@ html,body{
 }
 
 .zhc-call{
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;

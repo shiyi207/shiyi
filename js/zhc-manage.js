@@ -8,5 +8,6 @@ window.onload=function(){
 			kuai.classList.toggle('move')
 			circle.classList.toggle('moves')
 		})
+
 	})
 }

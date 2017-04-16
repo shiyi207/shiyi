@@ -192,20 +192,12 @@ main{
                top: 50%;
                margin-top: -0.2rem;
                border-radius: 0.6rem;
-               .move{
-                   animation: mov 0.2s linear forwards; 
-//                 width: 100%;
-               }
-               .moves{
-                   animation: movs 0.2s linear forwards;
-//                  transform: translateX(0.26rem);
-               }
                .zhc-right-full{
                    width: 0;
                    height: 100%;
                    background: #ff3f6f;
                    border-radius: 0.6rem;
-//                 transition: width 0.2s ease;
+                   transition: width 0.2s ease;
                }
                .zhc-right-circle{
                    width: 0.24rem;
@@ -215,7 +207,7 @@ main{
                    position: absolute;
                    right: 0.5rem;
                    top: 0.08rem;
-                   transition: right 2s ease;
+                   transition: transform 0.2s ease;
                }
            }
         }
@@ -245,3 +237,13 @@ main{
     }
 }
 }
+
+body main .zhc-zl-two .li-right > div .move{
+//                 animation: mov 0.2s linear forwards; 
+       width: 100%;
+   }
+  body main .zhc-zl-two .li-right > div .moves{
+//                 animation: movs 0.2s linear forwards;
+        transform: translateX(0.44rem);
+   }
+  

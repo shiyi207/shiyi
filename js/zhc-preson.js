@@ -10,15 +10,15 @@ $(document).ready(function(){
 //	})
 	
 
-//		$('.zhc-li-right p').hover(function(){
-//			$(this).css('right','0')
-//			$(this).children().first().css('display','inline-block')
-//			$(this).children('span').css('display','none')
-//		},function(){
-//			$(this).css('right','-1.6rem')
-//			$(this).children().first().css('display','none')
-//			$(this).children('span').css('display','inline-block')
-//		})
+		$('.zhc-li-right p').hover(function(){
+			$(this).css('right','0')
+			$(this).children().first().css('display','inline-block')
+			$(this).children('span').css('display','none')
+		},function(){
+			$(this).css('right','-1.6rem')
+			$(this).children().first().css('display','none')
+			$(this).children('span').css('display','inline-block')
+		})
 
 	let arr=$.map($('.zhc-actrile ul'),function(index,val){
 		return index.offsetTop

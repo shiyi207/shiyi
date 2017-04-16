@@ -6,6 +6,18 @@ html,body{
     background: #f7f7f7;
     height: 100%;
 }
+//body{
+//  overflow: auto;
+//  background-color: #f7f7f7;
+//   width: 100%;
+//  height: 100%;
+//}
+//html{
+//  width: 100%;
+//  height: 100%;
+//  overflow: hidden;
+//  position: relative;
+//}
 //顶部状态加啥啥
 .zhc-header{
     width: 100%;
@@ -296,7 +308,7 @@ html,body{
                             height: 100%;
                             line-height: 0.5rem;
                             text-align: center;
-                            transition: right 0.5s linear;
+                            transition: right 0.2s linear;
                             i{
                                 display: inline-block;
                                 width: 0.6rem;
