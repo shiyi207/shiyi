@@ -105,6 +105,7 @@ body{
 	padding-top:0.18rem;
 	background:#fff;
 	box-sizing:border-box;
+	/*margin-bottom:1rem;*/
 }
 .body>.img{
 	width:100%;
