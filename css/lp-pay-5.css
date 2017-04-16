@@ -1,0 +1,64 @@
+body{
+	background:#fdfcfd;
+}
+.key{
+	width:100%;
+	margin-top:1.43rem;
+}
+/*money*/
+.money{
+	width:7.5rem;
+	height:1.43rem;
+	/*background:blue;*/
+	text-align:center;
+	padding-top:0.34rem;
+}
+.money>.rmb{
+	width:0.92rem;
+	margin-top:0.16rem;
+}
+.money>.letter{
+	font-size:0.54rem;
+	font-family:'ALTGOT2N';
+	color:#f81e3d;
+}
+/*密码*/
+.mi{
+	width:7.5rem;
+	height:1.66rem;
+	box-sizing:border-box;
+	padding-left:0.38rem;
+	padding-right:0.38rem;
+	padding-top:0.74rem;
+}
+.mi>form{
+	width:6.74rem;
+	height:0.8rem;
+}
+.mi>form>input{
+	width:0.76rem;
+	height:100%;
+	border:none;
+	outline:none;
+	float:left;
+	margin-left:0.28rem;
+	text-align:center;
+	line-height:0.8rem;
+	font-size:0.48rem;
+	color:#ff3f6f;
+}
+.mi>.line{
+	width:6.74rem;
+	height:0.04rem;
+	margin-top:0.08rem;
+}
+.mi>.line>div{
+	width:0.76rem;
+	height:100%;
+	margin-left:0.28rem;
+	background:#afafaf;
+	float:left;
+}
+.mi>.line>.color{
+	background:#ff3f6f;
+}

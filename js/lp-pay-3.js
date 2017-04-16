@@ -29,9 +29,8 @@ $().ready(function() {
 			 	}	
 			}
 		})
-		console.log($('.sure1').css('display'))
-		$('.sure1')[0].ontouch =function(){
-			console.log(111)
+
+		$('.sure1')[0].addEventListener('touchstart',function(){
 			if($('.sure1').css('display')=='none'){
 				$('.sure1').css('display','inline-block');
 				$('.sure2').css('display','none');
@@ -39,8 +38,8 @@ $().ready(function() {
 				$('.sure2').css('display','inline-block');
 				$('.sure1').css('display','none');
 			}
-		}
-		$('.sure2')[0].ontouch =function(){
+		})
+		$('.sure2')[0].addEventListener('touchstart',function(){
 			if($('.sure2').css('display')=='none'){
 				$('.sure2').css('display','block');
 				$('.sure1').css('display','none');
@@ -48,7 +47,7 @@ $().ready(function() {
 				$('.sure1').css('display','block');
 				$('.sure2').css('display','none');
 			}
-		}
+		})
 		
 //		$('.sure').each(function(index,dom){
 //			console.log(dom)

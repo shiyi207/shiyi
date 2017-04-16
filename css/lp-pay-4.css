@@ -4,7 +4,7 @@ body{
 /*头部*/
 .lp-header{
 	width:7.52rem;
-	height:6.12rem;	
+	height:7.2rem;	
 	position:fixed;
 	top:0;
 	left:0;
@@ -47,12 +47,11 @@ body{
 }
 .lp-header>.cover>.line2>.avatar{
 	width:1.82rem;
-	margin-top:0.53rem;
+	margin-top:1rem;
 }
 .lp-header>.cover>.line2>.letter{
 	margin-top:0.1rem;
 	font-size:0.32rem;
-	/*font-family:'ALTGOT2N';*/
 }
 .lp-header>.cover>.line2>.letter>span:first-child{
 	color:#ffffff;
@@ -64,18 +63,18 @@ body{
 }
 .lp-header>.cover>.line2>.sign{
 	width:0.21rem;
-	margin-top:0.12rem;
-	margin-left:-5.4rem;
+	margin-top:0.2rem;
+	margin-left:-5.6rem;
 }
 .lp-header>.cover>.line2>.card{
-	margin-top:0.59rem;
+	margin-top:1rem;
 	margin-left:0.42rem;
 	width:5.16rem;
 	float:left;
 }
 .lp-header>.cover>.line2>.number{
 	position:absolute;
-	top:4.6rem;
+	top:5.6rem;
 	left:2.2rem;
 	color:#707070;
 }
@@ -85,7 +84,7 @@ body{
 	border-radius:0 0.1rem 0.1rem 0;
 	background:#fff;
 	box-shadow:0 0 0.2rem 0 #d0cdcd;
-	margin-top:0.78rem;
+	margin-top:1.23rem;
 	float:left;
 }
 .lp-header>.cover>.line2>.rectr{
@@ -94,8 +93,48 @@ body{
 	border-radius:0.1rem 0 0 0.1rem;
 	background:#fff;
 	box-shadow:0 0 0.2rem 0 #d0cdcd;
-	margin-top:0.78rem;
+	margin-top:1.23rem;
 	float:right;
+}
+/*body*/
+.body{
+	width:7.5rem;
+	height:4.12rem;
+	border-radius:0.1rem 0.1rem 0 0;
+	margin-top:9.2rem;
+	padding-top:0.18rem;
+	background:#fff;
+	box-sizing:border-box;
+}
+.body>.img{
+	width:100%;
+	height:2.37rem;
+	background-image:url('../img/lp/lp-pay-4-8.png');
+	background-size:100%;
+	background-position:center;
+}
+.body>.img>form{
+	width:4.2rem;
+	height:2.37rem;
+	margin-left:2rem;
+}
+.body>.img>form>div{
+	width:100%;
+	height:0.48rem;
+	float:left;
+	margin-top:0.32rem;
+	line-height:0.48rem;	
+}
+.body>.img>form>div:first-child{
+	margin-top:0;
+}
+.body>.img>form>div>input{
+	border:none;
+	outline:none;
+	background:rgba(0,0,0,0);
+	width:4rem;
+	color:#707070;
+	font-size:0.24rem;
 }
 /*底部*/
 .lp-footer{

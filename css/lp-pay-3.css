@@ -59,6 +59,7 @@
 	background-image:url('../img/lp/lp-pay-3-21.png');
 	background-size:100%;
 	padding-top:0.08rem;
+	background-repeat:no-repeat;
 }
 .lp-body>.form>form{
 	width:5.8rem;

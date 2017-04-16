@@ -66,9 +66,9 @@ body{
 	left:1.53rem;
 	top:-0.38rem;
 	color:#707070;
-	z-index:1;
-	width:2.38rem;
-	z-index:3;
+	z-index:100;
+	width:3rem;
+	text-align:left;
 }
 .lp-body>.section>.card1>.type{
 	height:0.4rem;
