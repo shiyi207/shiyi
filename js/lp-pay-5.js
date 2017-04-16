@@ -1,25 +1,33 @@
 $().ready(function(){
 	let aa=$("input[type='password']");
+	let number=0;
+	let arr=[];
 	for(var i = 0; i<aa.length;i++){
 		 var t = aa[i];
          t.index = i;
          t.setAttribute("readonly", true);
          t.onkeyup=function(){
-         		$('.line div').addClass('color');
-		  			$('.line div').each(function(index,val){
-		  				if(aa[index].value.length==0){
-		  					$('.line div').eq(index).removeClass('color')
-		  				}
-		  			})
-                this.value=this.value.replace(/^(.).*$/,'$1');
-                var next = this.index + 1;
-                if(next > aa.length - 1) return;
-                aa[next].removeAttribute("readonly");
-                aa[next].focus();
-            }
+     		$('.line div').addClass('color');
+  			$('.line div').each(function(index,val){
+  				if(aa[index].value.length==0){
+  					$('.line div').eq(index).removeClass('color');		
+  				}
+  			})
+  			if($('.color').length==6){
+				$('.cover').removeClass('active');
+        		$('.return')[0].addEventListener('touchstart',function(){
+        			location.href='index.html';
+        		})
+			}
+            this.value=this.value.replace(/^(.).*$/,'$1');
+            var next = this.index + 1;
+            if(next > aa.length - 1) return;
+            aa[next].removeAttribute("readonly");
+            aa[next].focus();
+        }
 	}
 	aa[0].removeAttribute("readonly");
-		
+//		资料-跳转
 //		 var txts = document.getElementsByTagName("input");
 //              for(var i = 0; i<txts.length;i++){
 //                  var t = txts[i];

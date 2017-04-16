@@ -24,8 +24,8 @@ $().ready(function() {
 			 	}
 			},
 			success:function(error,val){//验证成功触发函数,dom对象		
-			 	if (val.next('img').length!=0){
-					val.next('img').remove();
+			 	if ($(val).next('img').length!=0){
+					$(val).next('img').remove();
 			 	}	
 			}
 		})
@@ -49,17 +49,19 @@ $().ready(function() {
 			}
 		})
 		
-//		$('.sure').each(function(index,dom){
-//			console.log(dom)
-//			dom.each(function(val,index){
-//				val.onclick =function(){
-//					console.log($(this))
-//					if($(this).css('display','none')){
-//						$(this).css('display','block');
-//					}else{
-//						$(this).css('display','none');
-//					}
-//				}
-//			})
-//		})
+//		键盘与fixed
+		window.alert = function (msg) {
+		  $('body').append('<div>' + msg + '</div>')
+		};
+		function fixedWatch(el) {
+		  if(document.activeElement.nodeName == 'INPUT'){
+		    el.css('position', 'static');
+		  } else {
+		    el.css('position', 'fixed');
+		  }
+		}
+		setInterval(function () {
+		  fixedWatch($('.lp-footer'));
+		}, 500);
+
 	})

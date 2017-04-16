@@ -3,7 +3,7 @@ $().ready(function() {
 		$('.cover').css('display','block');
 		$('.left')[0].addEventListener('touchstart',function(){
 			if($('.left').hasClass('active')){
-				location.href='lp-pay-1.html';
+				location.href='lp-pay-2.html';
 				$('.cover').css('display','none');
 			}else{
 				$('.left').toggleClass('active');
@@ -12,7 +12,7 @@ $().ready(function() {
 		})
 		$('.right')[0].addEventListener('touchstart',function(){
 			if($('.right').hasClass('active')){
-				location.href='lp-pay-2.html';
+				location.href='lp-pay-1.html';
 			}else{
 				$('.left').toggleClass('active');
 				$('.right').toggleClass('active');
@@ -59,9 +59,17 @@ $().ready(function() {
 				}else{
 					money=money-36;
 				}
-				console.log(money)
 			}
 			$('.all').html(function(){
+				if(money==0){
+					money='0'+money;
+				}
+				return ''+money;
+			});
+			$('.yuan').html(function(){
+				if(money==0){
+					money='0'+money;
+				}
 				return ''+money;
 			});
 		})
