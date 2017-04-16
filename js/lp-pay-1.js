@@ -1,4 +1,4 @@
-$().ready(function() {
+$(document).ready(function() {
 	$('.lp-footer')[0].addEventListener('touchstart',function(){
 		$('.cover').css('display','block');
 		$('.left')[0].addEventListener('touchstart',function(){
