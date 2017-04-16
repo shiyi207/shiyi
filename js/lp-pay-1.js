@@ -1,7 +1,9 @@
 $(document).ready(function() {
-	$('.lp-footer')[0].on('touchstart',function(){
+	$('.lp-footer')[0].addEventListener('touchstart',function(e){
+		e.preventDefault()
 		$('.cover').css('display','block');
-		$('.left')[0].on('touchstart',function(){
+		$('.left')[0].addEventListener('touchstart',function(e){
+			e.preventDefault()
 			if($('.left').hasClass('active')){
 				location.href='lp-pay-1.html';
 				$('.cover').css('display','none');
@@ -10,7 +12,8 @@ $(document).ready(function() {
 				$('.right').toggleClass('active');
 			}	
 		})
-		$('.right')[0].on('touchstart',function(){
+		$('.right')[0].addEventListener('touchstart',function(e){
+			e.preventDefault()
 			if($('.right').hasClass('active')){
 				location.href='lp-pay-2.html';
 			}else{
@@ -21,12 +24,14 @@ $(document).ready(function() {
 	})
 //	删除//支付
 	let money=0;
-	$('.edit')[0].on('touchstart',function(){
+	$('.edit')[0].addEventListener('touchstart',function(e){
+		e.preventDefault()
 		$('.lp-del').toggleClass('active');
 		$('.lp-pay').toggleClass('active');
 	})
 	$('.lp-line1').each(function(index,value){
-		value.on('touchstart',function(){
+		value.addEventListener('touchstart',function(e){
+			e.preventDefault()
 			$(value).children('.circle').toggleClass('change');
 			if(index==0){
 				if($(value).children('.circle').hasClass('change')){
@@ -66,7 +71,8 @@ $(document).ready(function() {
 			});
 		})
 	})
-	$('.lp-del')[0].on('touchstart',function(){
+	$('.lp-del')[0].addEventListener('touchstart',function(e){
+		e.preventDefault()
 		$('.circle').each(function(index,value){
 			if($(value).hasClass('change')){
 				$(value).parent().addClass('active');
