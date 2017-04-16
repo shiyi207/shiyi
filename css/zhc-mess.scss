@@ -39,10 +39,13 @@ html,body{
             color: #fff;
             font-family: '宋体';
             line-height: 0.5rem;
+            img{
+                height: 100%; 
+            }
         }
         div{
-            width: 0.66rem;
-            height: 0.5rem;
+            width: 0.7rem;
+            height: 0.7rem;
             float: left;
             a{
                 display: block;
@@ -91,7 +94,7 @@ main{
             justify-content: space-around;
             div:first-child{
                 height: 0.4rem;
-                width: 100%;
+                width:100%;
                 font-size: 0.24rem;
                 color: #21212c;
             }
@@ -123,4 +126,7 @@ main{
             text-align: center;
         }
     }
+}
+body main .zhc-zl-one .li-left .zhc-color{
+    color:#F62466;
 }

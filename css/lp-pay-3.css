@@ -13,7 +13,6 @@
 	position:relative;
 }
 .lp-header>.cover>a{
-	/*display:inline-block;*/
 	width:0.34rem;
 	height:1rem;
 	background:red;
@@ -57,8 +56,53 @@
 	width:7.5rem;
 	height:3.61rem;
 	margin-top:0.3rem;
-	background-image:url('../img/lp/lp-pay-3-17.png');
+	background-image:url('../img/lp/lp-pay-3-21.png');
 	background-size:100%;
+	padding-top:0.08rem;
+	background-repeat:no-repeat;
+}
+.lp-body>.form>form{
+	width:5.8rem;
+	height:2.77rem;
+	margin-left:1.6rem;
+}
+.lp-body>.form>form>div{
+	width:5.8rem;
+	height:0.48rem;
+	margin-top:0.26rem;
+	line-height:0.48rem;
+}
+.lp-body>.form>form>div>input{
+	border:none;
+	outline:none;	
+	font-size:0.2rem;
+	color:#b8b8b8;	
+	width:4.8rem;
+	height:0.48rem;
+	background:rgba(0,0,0,0);
+	float:left;
+}
+.lp-body>.form>form>div>img{
+	float:right;
+	width:0.24rem;
+	margin-top:0.1rem;
+	margin-right:0.6rem;
+}
+.lp-body>.form>form>div:first-child{
+	margin-top:0;
+}
+.lp-body>.form>.sure1{
+	width:0.24rem;
+	margin-top:0.5rem;
+	margin-left:0.8rem;	
+}
+.lp-body>.form>.sure2{
+	width:0.24rem;
+	margin-top:0.5rem;
+	margin-left:0.8rem;	
+}
+.lp-body>.form>.active{
+	display:none;
 }
 /*底部*/
 .lp-footer{

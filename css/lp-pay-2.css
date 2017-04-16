@@ -23,12 +23,6 @@ body{
 }
 /*body*/
 .lp-body{
-	/*width:7.5rem;
-	height:13.34rem;
-	padding-top:1rem;
-	padding-bottom:1rem;
-	box-sizing:border-box;
-	background:#f7f7f7;*/
 	margin-top:1rem;
 	margin-bottom:1rem;
 }
@@ -72,8 +66,9 @@ body{
 	left:1.53rem;
 	top:-0.38rem;
 	color:#707070;
-	z-index:1;
-	width:2.38rem;
+	z-index:100;
+	width:3rem;
+	text-align:left;
 }
 .lp-body>.section>.card1>.type{
 	height:0.4rem;

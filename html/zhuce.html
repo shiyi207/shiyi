@@ -250,7 +250,7 @@
 	}
 </style>
 <body>
-	<a href="javascript:;">
+	<a href="denglu.html">
 		<img src="../img/lg/返回.gif" alt="" class="return"/>
 	</a>
 	<img src="../img/lg/logo_01_11.png" alt="" class="logo1"/>
@@ -261,80 +261,75 @@
 		<form action="" id="aa">
 			<img src="../img/lg/注册_07.png" alt="" class="zc"/>
 			<img src="../img/lg/kk_11.png" alt="" class="pass"/>
-			<span class="mm">mobile phone no</span>
-			<input type="text" class="input2" placeholder="您可以输入您的手机号" id="text"/>
+			<span class="mm">ACCOUNT</span>
+			<input type="text" class="input2" placeholder="您可以输入邮箱、手机号作为用户名" id="text"/>
 			<img src="../img/lg/line_07.png" alt="" class="line1"/>
 			<img src="../img/lg/kk_11.png" alt="" class="pass1"/>
-			<span class="mm1">PASSWORD</span>
-			<input type="text" class="input3" placeholder="请输入密码" id='text1'/>
+			<span class="mm1">MOBILE PHONE NO</span>
+			<input type="text" class="input3" placeholder="你可以输入您的手机号" id='text1'/>
 				<img src="../img/lg/line_07.png" alt="" class="line2"/>
 			<img src="../img/lg/kk_11.png" alt="" class="pass2"/>
 			<span class="mm2">PASSWORD</span>
-			<input type="password" class="input4" placeholder="请输入与上次相同的密码" id="text2"/>	
+			<input type="password" class="input4" placeholder="你可以输入六位数的密码" id="pass"/>	
 			<img src="../img/lg/line_07.png" alt="" class="line"/>
 			<img src="../img/lg/kk_11.png" alt="" class="pass3"/>
 			<span class="mm3">PASSWORD</span>
-			<input type="password" class="input1" placeholder="请输入与上次相同的密码" id="text3"/>
+			<input type="password" class="input1" placeholder="请输入与上次相同的密码" id="pass1"/>
 		</form>
 	</div>
-	<a href="zhuce1.html">
+	<a href="">
 		<img src="../img/lg/注册按钮_07.png" alt="" class='liji'/>
 	</a>
 </body>
 </html>
 <script>
-	let aa = document.getElementById('aa')
-				let text = document.getElementById('text');
-				text.onfocus=function(){
-					if (text.value=="您可以输入您的手机号"){
-						text.value="";
-					}
-				}
-				text.onblur=function(){
-					if(text.value){
-						return;
-					}
-					else{
-						text.value="您可以输入您的手机号"
-					}
-				};
-				let pass=document.getElementById('text1');
-				pass.onfocus=function(){
-					if(pass.value=="请输入密码"){
-						pass.value=""
-					}
-				}
-				pass.onblur=function(){
-					if(pass.value){
-						return
-					}else{
-						pass.value="请输入密码"
-					}
-				}
-				let pass1=document.getElementById('text2');
-				pass1.onfocus=function(){
-					if(pass1.value=="请输入与上次相同的密码"){
-						pass1.value=""
-					}
-				}
-				pass1.onblur=function(){
-					if(pass1.value){
-						return
-					}else{
-						pass1.value="请输入与上次相同的密码"
-					}
-				}
-				let pass2=document.getElementById('text3');
-				pass2.onfocus=function(){
-					if(pass2.value=="请输入与上次相同的密码"){
-						pass2.value=""
-					}
-				}
-				pass2.onblur=function(){
-					if(pass2.value){
-						return
-					}else{
-						pass2.value="请输入与上次相同的密码"
-					}
-				}
+	$('#aa').validate({
+			 rules:{
+            zhanghao: {
+                required:true
+            },
+            mima:{
+                required:true,
+                minlength:5
+            }
+        },
+        messages:{
+            zhanghao:{
+                required:'请输入'
+            },
+            mima:{
+                required:'请输入密码',
+                minlength:'请输入长度大于5'
+            }
+        },
+        errorElement:'span',
+         errorPlacement:function (error,val) {
+            error.css('font-size','10px').insertAfter(val);
+            error.css('color','red').insertAfter(val);
+            error.css('position','absolute').insertAfter(val);
+            error.css('left','65%').insertAfter(val);
+            error.css('top','200%').insertAfter(val);
+            if($(val).next('b').length==0){
+//              $('<b>').html('错了').insertAfter(val);
+            }
+        },
+        success:function (val,val1) {
+            if($(val1).next('i').length==0){
+//              $('<i>').html('对了').insertAfter(val1);
+            }
+        }
+		})
+		
+		$("#aa").keyup(function(){
+			let c=document.getElementById("text").value;
+			let d=document.getElementById("text1").value;
+			let e=document.getElementById('pass').value;
+			let f=document.getElementById('pass1').value;
+			if(c=='666666'||c=='666@qq'&&d=='666666'&&e==f){
+
+				$('.liji')[0].addEventListener('touchstart',function(){
+				location.href='zhuce3.html'
+		})
+			}
+  	})
 </script>

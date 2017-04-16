@@ -8,11 +8,11 @@
     <meta name="full-screen" content="yes">
     <meta name="format-detection" content="telephone=no, email=no" />
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-	<title>denglu</title>
 	<script src="../js/swiper.js"></script>
 	<link rel="stylesheet" href="../css/swiper.css">
 	<link rel="stylesheet" href="../css/common.css" />
 	<script src="../js/common.js"></script>
+	<title>denglu</title>
 </head>
 <style>
 	*{
@@ -28,10 +28,10 @@
         margin: 0;
         padding: 0;
     }
-    .swiper-container {
+   .swiper-container {
         width: 100%;
         height: 100%;
-        margin: 0 auto;
+        
     }
     .swiper-slide {
         text-align: center;
@@ -80,27 +80,43 @@
     	position: absolute;
     	top: 85%;
     }
+    .swiper-pagination,.swiper-button-next,.swiper-button-prev{
+    	display:none;
+    }
 </style>
 <body>
-	<div class="swiper-container">
+	 <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-            	<a class="tiaoguo">跳过</a>
+            	<a href="index.html" class="tiaoguo">跳过</a>
             	<img src="../img/lg/bbb_03.png" alt="" />
             </div>
             <div class="swiper-slide">
-            	<a class="tiaoguo">跳过</a>
+            	<a href="index.html" class="tiaoguo">跳过</a>
             	<img src="../img/lg/bbb_05.png" alt="" />
             </div>
             <div class="swiper-slide">
-            	<a class="tiaoguo">跳过</a>
+            	<a href="index.html" class="tiaoguo">跳过</a>
             	<img src="../img/lg/bbb_07.png" alt="" />
-                <a href="index.html" class="anniu"><img src="../img/lg/按钮.png" alt="" /></a>
             </div>
-        </div>
-    </div>
+        </div>        
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+   </div>
 </body>
 </html>
 <script>
-    let swiper = new Swiper('.swiper-container');
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        paginationClickable: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: 2500,
+        autoplayDisableOnInteraction: false
+    });
 </script>

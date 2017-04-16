@@ -15,21 +15,172 @@
 		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/zl-sousuo3.css"/>
 		<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../js/swiper.js" type="text/javascript" charset="utf-8"></script>
 		<!-- <script src="../js/iscroll.js"></script>
 		<script src="../js/demoUtils.js"></script> -->
 </head>
 <body>
 	<div class="zl-page">
+	<!-- 伪冒搜索框布局 -->
 		<div class="zl-head">
 			<div class="zl-bao"></div>
 			<div class="zl-search">
 				<span class="zl-sousuo"></span>
-				<input type="text" value="search ...">
+				<input type="text" placeholder="search ...">
 				<span class="zl-xiangji"></span>
 			</div>
 			<div class="zl-shaixuan"></div>
 		</div>
+		<div class="zl-searchmask" style="display:none;">
+			<div class="zl-jz">
+				<p><span></span></p>
+			</div>
+			<div class="zl-searchcontent" style="display:none;">
+				<div class="zl-jiantou"></div>
+				<a href="" class="zl-hid">
+					<div class="zl-searchitem">
+						<div class="zl-headimg">
+							<img src="../img/zl/sousuo-5_03.png" alt="">
+						</div>
+						<div class="zl-aside">
+							<div class="zl-name">
+								<p>HANBAN<span>CONCTION</span></p>
+								<ul class="zl-hot">
+									<li><img src="../img/zl/sousuo-5_19.png" alt=""></li>
+									<li><img src="../img/zl/sousuo-5_19.png" alt=""></li>
+									<li><img src="../img/zl/sousuo-5_19.png" alt=""></li>
+									<li><img src="../img/zl/sousuo-5_19.png" alt=""></li>
+									<li><img src="../img/zl/sousuo-5_21.png" alt=""></li>
+								</ul>
+							</div>
+							<div class="zl-date">
+								<p><span>2017 1.26</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;by louis.Liu for userinterface</p>
+							</div>
+							<div class="zl-hot">
+								<span><img src="../img/zl/sousuo-5_10.png" alt=""></span>
+								<i><img src="../img/zl/sousuo-5_12.png" alt=""></i>
+							</div>
+						</div>
+					</div>
+				</a>
+				<a href="" class="zl-hid">
+					<div class="zl-searchitem">
+						<div class="zl-headimg">
+							<img src="../img/zl/sousuo-5666_17.png" alt="">
+						</div>
+						<div class="zl-aside">
+							<div class="zl-name">
+								<p>HANBAN<span>CONCTION</span></p>
+								<ul class="zl-hot">
+									<li><img src="../img/zl/sousuo-5_19.png" alt=""></li>
+									<li><img src="../img/zl/sousuo-5_21.png" alt=""></li>
+									<li><img src="../img/zl/sousuo-5_21.png" alt=""></li>
+									<li><img src="../img/zl/sousuo-5_21.png" alt=""></li>
+									<li><img src="../img/zl/sousuo-5_21.png" alt=""></li>
+								</ul>
+							</div>
+							<div class="zl-date">
+								<p><span>2017 1.26</span>&nbsp;&nbsp;&nbsp;by louis.Liu for userinterface</p>
+							</div>
+						</div>
+					</div>
+				</a>
+				<a href="" class="zl-hid">
+					<div class="zl-searchitem">
+						<div class="zl-headimg">
+							<img src="../img/zl/sousuo-5_03.png" alt="">
+						</div>
+						<div class="zl-aside">
+							<div class="zl-name">
+								<p>HANBAN<span>CONCTION</span></p>
+								<ul class="zl-hot">
+									<li><img src="../img/zl/sousuo-5_19.png" alt=""></li>
+									<li><img src="../img/zl/sousuo-5_19.png" alt=""></li>
+									<li><img src="../img/zl/sousuo-5_21.png" alt=""></li>
+									<li><img src="../img/zl/sousuo-5_21.png" alt=""></li>
+									<li><img src="../img/zl/sousuo-5_21.png" alt=""></li>
+								</ul>
+							</div>
+							<div class="zl-date">
+								<p><span>2017 1.26</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;by louis.Liu for userinterface</p>
+							</div>
+						</div>
+					</div>
+				</a>
+				<a href="" class="zl-hid">
+					<div class="zl-searchitem">
+						<div class="zl-headimg">
+							<img src="../img/zl/sousuo-5666_17.png" alt="">
+						</div>
+						<div class="zl-aside">
+							<div class="zl-name">
+								<p>HANBAN<span>CONCTION</span></p>
+								<ul class="zl-hot">
+									<li><img src="../img/zl/sousuo-5_19.png" alt=""></li>
+									<li><img src="../img/zl/sousuo-5_19.png" alt=""></li>
+									<li><img src="../img/zl/sousuo-5_19.png" alt=""></li>
+									<li><img src="../img/zl/sousuo-5_21.png" alt=""></li>
+									<li><img src="../img/zl/sousuo-5_21.png" alt=""></li>
+								</ul>
+							</div>
+							<div class="zl-date">
+								<p><span>2017 1.26</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;by louis.Liu for userinterface</p>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+
+<script>
+// 伪冒搜索框
+$(function(){
+
+	let search=$('.zl-search>input');
+	let mask=$('.zl-searchmask')
+	let searchcontent=$('.zl-searchcontent')
+	let searchitem=$('.zl-searchitem').parent()
+	let submit=$('.zl-shaixuan')
+	let jiazai=$('.zl-jz')
+	let jiazaibar=$('.zl-jz>p>span')
+	// console.log(searchitem)
+	search.focus(function(){
+		mask.slideDown(200)
+	}).focusout(function(){
+		mask.slideUp(200)
+	}).keyup(function(){
+		if(search.val()){
+			searchcontent.show()
+			searchitem.attr('class','zl-searchitem zl-hid');
+			let searchl=search.val().length
+			searchitem.eq(searchl).prevAll().removeClass('zl-hid')
+			if(searchl>=4){
+				searchitem.attr('class','zl-searchitem');
+			}
+		}else{
+			searchcontent.hide()
+		}
+	})	
+	
+	submit.on('touchstart',function(){
+		searchcontent.slideUp(200);
+		search.off()
+		mask.slideDown(200);
+		jiazai.slideDown(200);
+		jiazaibar.animate({width:'100%'},2000,function(){
+
+			if(search.val()){
+			console.log(search.val())
+				location.href='zl-sousuo2.html'
+			}else{
+				location.href='zl-sousuo3.html'
+			}		
+		})
+	})
+})
+</script>
+<!-- 搜索结束 -->
 		<div class="zl-result">
 			<img src="../img/zl/sousuo-3_03.png" alt="">
 			<span>
