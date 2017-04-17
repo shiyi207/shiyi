@@ -60,6 +60,7 @@ input{
     margin-left:0.4rem;
     margin-top:0.18rem;
     border:0.01rem solid #FF85A4;
+    outline: 0;
 }
 .bottom{
     width:100%;
@@ -68,7 +69,5 @@ input{
     background-size: 100% 0.7rem;
     background-position: center;
     /*background:blue;*/
-    position: fixed;
-    bottom:0;
-    left:0;
+
 }
