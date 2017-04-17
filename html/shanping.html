@@ -78,45 +78,36 @@
     	width: 40%;
     	height: 1rem;
     	position: absolute;
-    	top: 85%;
+    	top:85%;
+        z-index: 100;
+        left: 30%;
     }
     .swiper-pagination,.swiper-button-next,.swiper-button-prev{
     	display:none;
     }
 </style>
 <body>
-	 <div class="swiper-container">
+    <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-            	<a href="index.html" class="tiaoguo">跳过</a>
-            	<img src="../img/lg/bbb_03.png" alt="" />
+                <a href="index.html" class="tiaoguo">跳过</a>
+                <img src="../img/lg/bbb_03.png" alt="" />
             </div>
             <div class="swiper-slide">
-            	<a href="index.html" class="tiaoguo">跳过</a>
-            	<img src="../img/lg/bbb_05.png" alt="" />
+                <a href="index.html" class="tiaoguo">跳过</a>
+                <img src="../img/lg/bbb_05.png" alt="" />
             </div>
             <div class="swiper-slide">
-            	<a href="index.html" class="tiaoguo">跳过</a>
-            	<img src="../img/lg/bbb_07.png" alt="" />
+                <a href="index.html" class="tiaoguo">跳过</a>
+                <img src="../img/lg/bbb_07.png" alt="" />
+                <a href="index.html">
+                    <img src="../img/lg/niu.png" alt="" class='anniu'>
+                </a>
             </div>
-        </div>        
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-        <!-- Add Arrows -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-   </div>
+        </div>
+    </div>
 </body>
 </html>
 <script>
-    var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        paginationClickable: true,
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: 2500,
-        autoplayDisableOnInteraction: false
-    });
+    var swiper = new Swiper('.swiper-container');
 </script>
