@@ -280,8 +280,6 @@
 	<a>
 		<img src="../img/lg/zhuceb_07.png" alt="" class='liji'/>
 	</a>
-</body>
-</html>
 <script>
 	$('#aa').validate({
 			 rules:{
@@ -321,10 +319,14 @@
 		})
 		
 		$("#aa").keyup(function(){
-			if($("#text").val()=='666666'||'666@qq'&&$("#text1").val()=='666666'&&$("#pass").val()==$("#pass1").val()){	
+			if($("#text").val()=='666666'||'666@qq'&&$("#text1").val()=='666666'&&$("#pass").val()==$("#pass1").val()){
+				console.log($("#text").val())
+				$('.liji')[0].addEventListener('touchstart',function(){
+						location.href='https://htmlpreview.github.io/?https://github.com/shiyi207/shiyi/blob/master/html/denglu.html'
+				})
 			}	
   	})
-		$('.liji')[0].addEventListener('touchstart',function(){
-				location.href='https://htmlpreview.github.io/?https://github.com/shiyi207/shiyi/blob/master/html/denglu.html'
-		})
+
 </script>
+</body>
+</html>
