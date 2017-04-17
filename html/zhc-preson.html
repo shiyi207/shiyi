@@ -12,18 +12,16 @@
 	<link rel="stylesheet" type="text/css" href="../css/common.css"/>
 	<link rel="stylesheet" type="text/css" href="../css/zhc-preson.css" />
 	<script type="text/javascript">
-
-var myScroll;
-
-function loaded () {
-	myScroll = new IScroll('#wrapper', {
-		scrollbars: true,
-		mouseWheel: true,
-		interactiveScrollbars: true,
-		shrinkScrollbars: 'scale',
-		fadeScrollbars: true
-	});
-}
+		var myScroll;
+		function loaded () {
+			myScroll = new IScroll('#wrapper', {
+				scrollbars: true,
+				mouseWheel: true,
+				interactiveScrollbars: true,
+				shrinkScrollbars: 'scale',
+				fadeScrollbars: true
+			});
+		}
 
 </script>
 
@@ -71,7 +69,7 @@ body {
 	position: absolute;
 	z-index: 1;
 	top: 45px;
-	bottom: 48px;
+	bottom: 0;
 	left: 0;
 	width: 100%;
 	background: #f7f7f7;
