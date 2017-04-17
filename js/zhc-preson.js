@@ -33,16 +33,16 @@ $(document).ready(function(){
 		
 		
 //	楼层跳转?
-	let arr=$.map($('.zhc-actrile ul'),function(index,val){
+	var arr=$.map($('.zhc-actrile ul'),function(index,val){
 		return index.offsetTop
 	})
 	console.log(arr)
 	$('.zhc-asdie li')
 	window.onscroll=function(){
-		let obj=document.body.scrollTop==0?document.documentElement:document.body;
-		console.log(obj.scrollTop)
+		var obj=document.body.scrollTop==0?document.documentElement:document.body;
+//		console.log(obj.scrollTop)
 		arr.forEach(function(value,index){
-		console.log(arr[index])
+//		console.log(arr[index])
 			if(obj.scrollTop>=arr[index]){
 //				遍历左边角定位块里边的LI的集合  
 				

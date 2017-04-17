@@ -8,11 +8,16 @@
     <meta name="full-screen" content="yes">
     <meta name="format-detection" content="telephone=no, email=no" />
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<title>denglu</title>
+    <script src="../js/swiper.js"></script>
+    <link rel="stylesheet" href="../css/swiper.css">
+    <link rel="stylesheet" href="../css/common.css" />
+    <script src="../js/common.js"></script>
+    <script src="../js/jquery.js"></script>
 	<script src="../js/swiper.js"></script>
 	<link rel="stylesheet" href="../css/swiper.css">
 	<link rel="stylesheet" href="../css/common.css" />
 	<script src="../js/common.js"></script>
-	<title>denglu</title>
 </head>
 <style>
 	*{
@@ -37,7 +42,6 @@
         text-align: center;
         font-size: 18px;
         background: #fff;
-        
         /* Center slide text vertically */
         display: -webkit-box;
         display: -ms-flexbox;
@@ -51,6 +55,7 @@
         -ms-flex-align: center;
         -webkit-align-items: center;
         align-items: center;
+        width: 100%;
     }
     html,body{
     	width: 100%;
@@ -73,50 +78,59 @@
     	color: #fff;
     	box-sizing: border-box;
     	text-align: center;
+    	z-index: 500;
     }
     .anniu{
     	width: 40%;
     	height: 1rem;
     	position: absolute;
-    	top: 85%;
+    	top:85%;
+        left: 30%;
     }
     .swiper-pagination,.swiper-button-next,.swiper-button-prev{
     	display:none;
     }
+    .swiper-slide:nth-child(3){
+    	position: relative;
+    }
+    
 </style>
 <body>
-	 <div class="swiper-container">
+    <!--<div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-            	<a href="index.html" class="tiaoguo">跳过</a>
-            	<img src="../img/lg/bbb_03.png" alt="" />
+                <a href="index.html" class="tiaoguo">跳过</a>
+                <img src="../img/lg/bbb_03.png" alt="" />
             </div>
             <div class="swiper-slide">
-            	<a href="index.html" class="tiaoguo">跳过</a>
-            	<img src="../img/lg/bbb_05.png" alt="" />
+                <a href="index.html" class="tiaoguo">跳过</a>
+                <img src="../img/lg/bbb_05.png" />
             </div>
             <div class="swiper-slide">
-            	<a href="index.html" class="tiaoguo">跳过</a>
-            	<img src="../img/lg/bbb_07.png" alt="" />
+                <a href="index.html" class="tiaoguo">跳过</a>
+                <img src="../img/lg/bbb_07.png" alt="" />
+               
             </div>
-        </div>        
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-        <!-- Add Arrows -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-   </div>
+        </div>
+    </div>-->
+    <div class="swiper-container">
+                <a href="index.html" class="tiaoguo">跳过</a>
+			        <div class="swiper-wrapper">
+			            <img src="../img/lg/bbb_03.png" class="swiper-slide" style="width:100%">
+			            <img src="../img/lg/bbb_05.png" class="swiper-slide">
+			            	<div class="swiper-slide">
+			            		 <img src="../img/lg/bbb_07.png" /> 
+			            		 <a href="index.html">
+			            		 	<img src="../img/lg/anniu_03.png" alt="" class="anniu"/>
+			            		 </a>
+			            	</div>
+			           
+			        </div>
+			        
+			    </div>
+			    <!-- Initialize Swiper -->
+			    <script>
+    				var swiper = new Swiper('.swiper-container');
+			    </script>
 </body>
 </html>
-<script>
-    var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        paginationClickable: true,
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: 2500,
-        autoplayDisableOnInteraction: false
-    });
-</script>

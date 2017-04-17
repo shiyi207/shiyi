@@ -1,26 +1,6 @@
 $(document).ready(function() {
-	$('.lp-footer')[0].addEventListener('touchstart',function(){
-		$('.cover').css('display','block');
-		$('.left')[0].addEventListener('touchstart',function(){
-			if($('.left').hasClass('active')){
-				location.href='lp-pay-2.html';
-				$('.cover').css('display','none');
-			}else{
-				$('.left').toggleClass('active');
-				$('.right').toggleClass('active');
-			}	
-		})
-		$('.right')[0].addEventListener('touchstart',function(){
-			if($('.right').hasClass('active')){
-				location.href='lp-pay-1.html';
-			}else{
-				$('.left').toggleClass('active');
-				$('.right').toggleClass('active');
-			}	
-		})
-	})
-//	删除//支付
-	let money=0;
+	//删除//支付
+	var money=0;
 	$('.edit')[0].addEventListener('touchstart',function(){
 		$('.lp-del').toggleClass('active');
 		$('.lp-pay').toggleClass('active');
@@ -34,8 +14,6 @@ $(document).ready(function() {
 				}else{
 					money=money-569;
 				}
-				console.log(money)
-				
 			}
 			if(index==1){
 				if($(value).children('.circle').hasClass('change')){
@@ -43,7 +21,6 @@ $(document).ready(function() {
 				}else{
 					money=money-96;
 				}
-				console.log(money)
 			}
 			if(index==2){
 				if($(value).children('.circle').hasClass('change')){
@@ -51,7 +28,6 @@ $(document).ready(function() {
 				}else{
 					money=money-852;
 				}
-				console.log(money)
 			}
 			if(index==3){
 				if($(value).children('.circle').hasClass('change')){
@@ -81,4 +57,28 @@ $(document).ready(function() {
 			}
 		})
 	})
+	
+	$('.lp-footer')[0].addEventListener('touchstart',function(){
+		if(money!=0){
+			$('.cover').css('display','block');
+		}
+		$('.left')[0].addEventListener('touchstart',function(){
+			if($('.left').hasClass('active')){
+				location.href='https://htmlpreview.github.io/?https://raw.githubusercontent.com/shiyi207/shiyi/master/html/lp-pay-2.html';
+				$('.cover').css('display','none');
+			}else{
+				$('.left').toggleClass('active');
+				$('.right').toggleClass('active');
+			}	
+		})
+		$('.right')[0].addEventListener('touchstart',function(){
+			if($('.right').hasClass('active')){
+				location.href='https://htmlpreview.github.io/?https://raw.githubusercontent.com/shiyi207/shiyi/master/html/lp-pay-1.html';
+			}else{
+				$('.left').toggleClass('active');
+				$('.right').toggleClass('active');
+			}	
+		})
+	})
+	
 })

@@ -38,7 +38,7 @@
 			</div>
 			<div class="zl-searchcontent" style="display:none;">
 				<div class="zl-jiantou"></div>
-				<a href="" class="zl-hid">
+				<a href="sxy-detail.html" class="zl-hid">
 					<div class="zl-searchitem">
 						<div class="zl-headimg">
 							<img src="../img/zl/sousuo-5_03.png" alt="">
@@ -64,7 +64,7 @@
 						</div>
 					</div>
 				</a>
-				<a href="" class="zl-hid">
+				<a href="sxy-detail.html" class="zl-hid">
 					<div class="zl-searchitem">
 						<div class="zl-headimg">
 							<img src="../img/zl/sousuo-5666_17.png" alt="">
@@ -86,7 +86,7 @@
 						</div>
 					</div>
 				</a>
-				<a href="" class="zl-hid">
+				<a href="sxy-detail.html" class="zl-hid">
 					<div class="zl-searchitem">
 						<div class="zl-headimg">
 							<img src="../img/zl/sousuo-5_03.png" alt="">
@@ -108,7 +108,7 @@
 						</div>
 					</div>
 				</a>
-				<a href="" class="zl-hid">
+				<a href="sxy-detail.html" class="zl-hid">
 					<div class="zl-searchitem">
 						<div class="zl-headimg">
 							<img src="../img/zl/sousuo-5666_17.png" alt="">
@@ -137,13 +137,13 @@
 // 伪冒搜索框
 $(function(){
 
-	let search=$('.zl-search>input');
-	let mask=$('.zl-searchmask')
-	let searchcontent=$('.zl-searchcontent')
-	let searchitem=$('.zl-searchitem').parent()
-	let submit=$('.zl-shaixuan')
-	let jiazai=$('.zl-jz')
-	let jiazaibar=$('.zl-jz>p>span')
+	var search=$('.zl-search>input');
+	var mask=$('.zl-searchmask')
+	var searchcontent=$('.zl-searchcontent')
+	var searchitem=$('.zl-searchitem').parent()
+	var submit=$('.zl-shaixuan')
+	var jiazai=$('.zl-jz')
+	var jiazaibar=$('.zl-jz>p>span')
 	// console.log(searchitem)
 	search.focus(function(){
 		mask.slideDown(200)
@@ -153,7 +153,7 @@ $(function(){
 		if(search.val()){
 			searchcontent.show()
 			searchitem.attr('class','zl-searchitem zl-hid');
-			let searchl=search.val().length
+			var searchl=search.val().length
 			searchitem.eq(searchl).prevAll().removeClass('zl-hid')
 			if(searchl>=4){
 				searchitem.attr('class','zl-searchitem');
@@ -172,10 +172,13 @@ $(function(){
 
 			if(search.val()){
 			console.log(search.val())
-				location.href='zl-sousuo2.html'
+			// 	location.href='zl-sousuo2.html'
+			// }else{
+			// 	location.href='zl-sousuo3.html'
+				location.href='https://htmlpreview.github.io/?https://github.com/shiyi207/shiyi/blob/master/html/zl-sousuo2.html'
 			}else{
-				location.href='zl-sousuo3.html'
-			}		
+				location.href='https://htmlpreview.github.io/?https://github.com/shiyi207/shiyi/blob/master/html/zl-sousuo3.html'
+			}			
 		})
 	})
 })

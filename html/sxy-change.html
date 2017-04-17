@@ -12,6 +12,7 @@
 	    <link rel="stylesheet" href="../css/common.css">
 	    <link rel="stylesheet" href="../css/sxy-change.css">
 	    <script src="../js/common.js"></script>
+		<script src="../js/jquery.js" type="text/javascript" charset="utf-8"></script>
 	    <script src="../js/iscroll.js"></script>
 	</head>
 	<body>
@@ -26,6 +27,16 @@
 	        	<a href=""><img src="../img/sxy/sxy-sou.png" alt="" /></a>
 	            <form action="">
 	                <input type="text" placeholder="search...">
+	                <!-- 加入搜索页链接，点击搜索框即跳转 -->
+					<script>
+					$(function(){
+						var search=$('header input[type=text]');
+						search.focus(function(){
+							location.href='https://htmlpreview.github.io/?https://github.com/shiyi207/shiyi/blob/master/html/zl-sousuo1.html'
+							// 	location.href='zl-sousuo1.html'	
+						})
+					})
+					</script>
 	            </form>
 	            <a href=""><img src="../img/sxy/sxy1.png" alt="" /></a>
 	        </div>

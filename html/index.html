@@ -13,13 +13,28 @@
     <link rel="stylesheet" href="../css/index.css">
     <script src="../js/common.js"></script>
     <script src="../js/iscroll.js"></script>
+	<script src="../js/jquery.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript" src="../js/swiper.js" ></script>
 </head>
-<body>
-	<div id="wrapper">
-        <div id="scroller">
+<script type="text/javascript">
+
+    var myScroll;
+
+    function loaded () {
+        myScroll = new IScroll('#wrapper', {
+            scrollbars: true,
+            mouseWheel: true,
+            interactiveScrollbars: true,
+            shrinkScrollbars: 'scale',
+            fadeScrollbars: true
+        });
+    }
+
+</script>
+<body onload="loaded()">
+	
     <!--头部开始-->
-    <header>
+    <header id="header">
         <a href="" class="position">
             <img src="../img/sxy/sxy-map.png" alt="">
         </a>
@@ -27,6 +42,16 @@
         	<a href=""><img src="../img/sxy/sxy-sou.png" alt="" /></a>
             <form action="">
                 <input type="text" placeholder="search...">
+				<!-- 加入搜索页链接，点击搜索框即跳转 -->
+				<script>
+				$(function(){
+					var search=$('header input[type=text]');
+					search.focus(function(){
+						location.href='https://htmlpreview.github.io/?https://github.com/shiyi207/shiyi/blob/master/html/zl-sousuo1.html'
+						// 	location.href='zl-sousuo1.html'	
+					})
+				})
+				</script>
             </form>
             <a href=""><img src="../img/sxy/sxy1.png" alt="" /></a>
         </div>
@@ -35,8 +60,9 @@
         </a>
     </header>
     <!--头部结束-->
-    <div id="wrapper">
-        <div id="scroller">
+
+	<div id="wrapper">
+	<div id="scroller">
         	<!--banner开始-->
         		<!-- Swiper -->
 			    <div class="swiper-container">
@@ -80,13 +106,13 @@
 			<!--按钮结束-->
 			<!--推荐开始-->
 			<div class="remmend">
-				<a href=""><img src="../img/sxy/tui.png" alt="" /></a>
-				<a href=""><img src="../img/sxy/fujin.png" alt="" /></a>
+				<a href="javascript:;"><img src="../img/sxy/tui.png" alt="" /></a>
+				<a href="javascript:;"><img src="../img/sxy/fujin.png" alt="" /></a>
 			</div>
 			<div class="sxy-remmend">
 				<div class="bg">
 					<a href="javascript:;" class="sxy-top"><img src="../img/sxy/sxy-top.png" alt="" /></a>
-					<a href="">
+					<a href="sxy-detail.html">
 						<img src="../img/sxy/sxy-t1.png" alt="" class="sxy-product"/>
 						<div class="sxy-content">
 							<p><span>香奈儿</span><span>斜挎背包</span></p>
@@ -98,7 +124,7 @@
 					</a>
 				</div>
 				<div class="bg">
-					<a href="">
+					<a href="sxy-detail.html">
 						<img src="../img/sxy/sxy-t2.png" alt=""  class="sxy-product"/>
 						<img src="../img/sxy/sxy-discount.png" alt="" class="sxy-discount"/>
 						<div class="sxy-content">
@@ -111,7 +137,7 @@
 					</a>
 				</div>
 				<div class="bg">
-					<a href="">
+					<a href="sxy-detail.html">
 						<img src="../img/sxy/sxy-t3.png" alt=""  class="sxy-product"/>
 						<img src="../img/sxy/sxy-new.png" alt="" class="sxy-discount"/>
 						<div class="sxy-content">
@@ -227,7 +253,7 @@
         </div>
     </div>
     <!--底部开始-->
-    <footer>
+    <footer id="footer">
 		<a href="index.html"><img src="../img/sxy/shou1.png" alt="" /></a>
 		<a href="" class="active"><img src="../img/sxy/shou2.png" alt=""/></a>
 		<a href="sxy-menu.html"><img src="../img/sxy/fen2.png" alt="" /></a>
@@ -240,22 +266,5 @@
 		<a href=""  class="active"><img src="../img/sxy/my1.png" alt=""/></a>
     </footer>
     <!--底部结束-->
-</div>
-</div>
 </body>
 </html>
-<script type="text/javascript">
-
-    var myScroll;
-
-    function loaded () {
-        myScroll = new IScroll('#wrapper', {
-            scrollbars: true,
-            mouseWheel: true,
-            interactiveScrollbars: true,
-            shrinkScrollbars: 'scale',
-            fadeScrollbars: true
-        });
-    }
-
-</script>
