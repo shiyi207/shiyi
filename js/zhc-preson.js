@@ -33,28 +33,24 @@ $(document).ready(function(){
 		
 		
 //	楼层跳转?
-	var arr=$.map($('.zhc-actrile ul'),function(index,val){
-		return index.offsetTop
-	})
-	console.log(arr)
-	$('.zhc-asdie li')
-	window.onscroll=function(){
-		var obj=document.body.scrollTop==0?document.documentElement:document.body;
-//		console.log(obj.scrollTop)
-		arr.forEach(function(value,index){
-//		console.log(arr[index])
-			if(obj.scrollTop>=arr[index]){
-//				遍历左边角定位块里边的LI的集合  
-				
-				$('.zhc-asdie li').get().forEach(function(value,index){
-//					先移除一个类名
-					value.classList.remove('zhc-active')
-				})
-//				和arr所对应的下标改变lists那个下标的类名
-				$('.zhc-asdie li').get()[index].classList.add('zhc-active')
-			}
-			
-		})
-	}
+//	var arr=$.map($('.zhc-actrile ul'),function(index,val){
+//		return index.offsetTop
+//	})
+//	console.log(arr)
+//	$('.zhc-asdie li')
+//	$(Window)[0].addEventListener('touchmove',)
+//	
+//	console.log(111)
+//		var obj=document.body.scrollTop==0?document.documentElement:document.body;
+//		arr.forEach(function(value,index){
+//			if(obj.scrollTop>=arr[index]){
+//				$('.zhc-asdie li').get().forEach(function(value,index){
+//					value.classList.remove('zhc-active')
+//				})
+//				$('.zhc-asdie li').get()[index].classList.add('zhc-active')
+//			}
+//			
+//		})
+
 	
 })
