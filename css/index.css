@@ -62,7 +62,7 @@ header .search >a:first-child{
 	height: .35rem;
 	position: absolute;
 	left: 0.03rem;
-	top: -0.18rem;
+	top: -0.12rem;
 	display: block;
 	z-index: 10;
 }
@@ -74,7 +74,7 @@ header .search >a:last-child{
 	height: .39rem;
 	position: absolute;
 	right: .05rem;
-	top: -0.14rem;
+	top: -0.1rem;
 	display: block;
 	z-index: 100;
 }
@@ -84,7 +84,6 @@ header .search >a:last-child img{
 /*头部结束*/
 /*banner开始*/
 body .swiper-container {
-	margin-top: 1rem;
 	width: 100%;
 	overflow: hidden;
 	height: 4.4rem;
