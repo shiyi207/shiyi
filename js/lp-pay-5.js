@@ -1,7 +1,7 @@
 $().ready(function(){
-	let aa=$("input[type='password']");
-	let number=0;
-	let arr=[];
+	var aa=$("input[type='password']");
+	var number=0;
+	var arr=[];
 	for(var i = 0; i<aa.length;i++){
 		 var t = aa[i];
          t.index = i;
@@ -16,7 +16,7 @@ $().ready(function(){
   			if($('.color').length==6){
 				$('.cover').removeClass('active');
         		$('.return')[0].addEventListener('touchstart',function(){
-        			location.href='index.html';
+        			location.href='https://htmlpreview.github.io/?https://raw.githubusercontent.com/shiyi207/shiyi/master/html/index.html';
         		})
 			}
             this.value=this.value.replace(/^(.).*$/,'$1');
