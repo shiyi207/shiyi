@@ -234,6 +234,8 @@
   border: 1px solid #EFEEEC;
   font-size: 0.2rem;
   padding-left: 0.15rem;
+  outline: 0;
+
 }
 
 .message .leikuang {
@@ -286,14 +288,23 @@
   font-size: 0.2rem;
 }
 
-.message .lei .circle {
+.message .lei .circle-one {
   width: 0.1rem;
   height: 0.1rem;
   border-radius: 50%;
   background: #00EE9F;
   float: left;
   margin-top: 0.2rem;
-  margin-left: 0.1rem;
+  margin-left: -0.6rem;
+}
+.message .lei .circle-two {
+  width: 0.1rem;
+  height: 0.1rem;
+  border-radius: 50%;
+  background: #00EE9F;
+  float: left;
+  margin-top: 0.2rem;
+  margin-left: -0.8rem;
 }
 
 .message .lei span {

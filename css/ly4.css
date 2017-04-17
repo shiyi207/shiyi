@@ -233,6 +233,7 @@
     border: 1px solid #EFEEEC;
     font-size: 0.2rem;
     padding-left: 0.15rem;
+    outline: 0;
 }
 
 .message .leikuang {
@@ -479,6 +480,7 @@
     height: 0.4rem;
     font-size: 0.3rem;
     display: block;
+
     margin-top: 0.15rem;
     color: white;
 }

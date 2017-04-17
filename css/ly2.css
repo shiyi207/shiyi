@@ -69,7 +69,5 @@ input{
     background-size: 100% 0.7rem;
     background-position: center;
     /*background:blue;*/
-    position: fixed;
-    bottom:0;
-    left:0;
+
 }
