@@ -5,10 +5,10 @@ body{
 .lp-header{
 	width:7.52rem;
 	height:7.2rem;	
-	position:fixed;
+	/*position:fixed;
 	top:0;
-	left:0;
-	z-index:100;
+	left:0;*/
+	/*z-index:100;*/
 	background-image:url('../img/lp/lp-pay-4-1.png');
 	background-size:100%;
 }
@@ -64,7 +64,6 @@ body{
 .lp-header>.cover>.line2>.sign{
 	width:0.21rem;
 	margin-top:0.2rem;
-	margin-left:-5.6rem;
 }
 .lp-header>.cover>.line2>.card{
 	margin-top:1rem;

@@ -37,15 +37,15 @@ $(document).ready(function() {
 				}
 			}
 			$('.all').html(function(){
-				if(money==0){
-					money='0'+money;
-				}
+//				if(money==0){
+//					money=money;
+//				}
 				return ''+money;
 			});
 			$('.yuan').html(function(){
-				if(money==0){
-					money='0'+money;
-				}
+//				if(money==0){
+//					money=money;
+//				}
 				return ''+money;
 			});
 		})
