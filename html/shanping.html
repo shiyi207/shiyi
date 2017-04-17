@@ -42,7 +42,6 @@
         text-align: center;
         font-size: 18px;
         background: #fff;
-        
         /* Center slide text vertically */
         display: -webkit-box;
         display: -ms-flexbox;
@@ -79,6 +78,7 @@
     	color: #fff;
     	box-sizing: border-box;
     	text-align: center;
+    	z-index: 500;
     }
     .anniu{
     	width: 40%;
@@ -93,7 +93,7 @@
     }
 </style>
 <body>
-    <div class="swiper-container">
+    <!--<div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <a href="index.html" class="tiaoguo">跳过</a>
@@ -111,9 +111,18 @@
                 </a>
             </div>
         </div>
-    </div>
+    </div>-->
+    <div class="swiper-container">
+                <a href="index.html" class="tiaoguo">跳过</a>
+			        <div class="swiper-wrapper">
+			            <img src="../img/lg/bbb_03.png" class="swiper-slide" style="width:100%">
+			            <img src="../img/lg/bbb_05.png" class="swiper-slide">
+			            <img src="../img/lg/bbb_07.png" class="swiper-slide">
+			        </div>
+			    </div>
+			    <!-- Initialize Swiper -->
+			    <script>
+    				var swiper = new Swiper('.swiper-container');
+			    </script>
 </body>
 </html>
-<script>
-    var swiper = new Swiper('.swiper-container');
-</script>
