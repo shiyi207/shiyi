@@ -108,25 +108,16 @@
 		</footer>
 	</body>
 </html>
-<script type="text/javascript">
+	<script type="text/javascript">
+		var myScroll;
+		function loaded () {
+			myScroll = new IScroll('#wrapper', {
+				scrollbars: true,
+				mouseWheel: true,
+				interactiveScrollbars: true,
+				shrinkScrollbars: 'scale',
+				fadeScrollbars: true,
+			});
+		}
 
-    var myScroll;
-
-    function loaded () {
-        myScroll = new IScroll('#wrapper', {
-            scrollbars: true,
-<<<<<<< HEAD
-            mouseWheel: true,
-            interactiveScrollbars: true,
-            shrinkScrollbars: 'scale',
-            fadeScrollbars: true
-=======
-			mouseWheel: true,
-			interactiveScrollbars: true,
-			shrinkScrollbars: 'scale',
-			fadeScrollbars: true,
->>>>>>> 1081c5a8270887c3ffe65b7fbc4080db9930a0fc
-        });
-    }
-
-</script>
+	</script>
