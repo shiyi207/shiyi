@@ -40,9 +40,9 @@ $(document).ready(function(){
 	$('.zhc-asdie li')
 	window.onscroll=function(){
 		let obj=document.body.scrollTop==0?document.documentElement:document.body;
-		console.log(obj.scrollTop)
+//		console.log(obj.scrollTop)
 		arr.forEach(function(value,index){
-		console.log(arr[index])
+//		console.log(arr[index])
 			if(obj.scrollTop>=arr[index]){
 //				遍历左边角定位块里边的LI的集合  
 				
