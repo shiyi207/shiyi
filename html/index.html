@@ -105,7 +105,21 @@ body {
 
 
 </style>
+<script type="text/javascript">
 
+    var myScroll;
+
+    function loaded () {
+        myScroll = new IScroll('#wrapper', {
+            scrollbars: true,
+            mouseWheel: true,
+            interactiveScrollbars: true,
+            shrinkScrollbars: 'scale',
+            fadeScrollbars: true
+        });
+    }
+
+</script>
 <body onload="loaded()">
 	
     <!--头部开始-->
@@ -136,8 +150,8 @@ body {
     </header>
     <!--头部结束-->
 
-    <div id="wrapper">
-        <div id="scroller">
+	<div id="wrapper">
+	<div id="scroller">
         	<!--banner开始-->
         		<!-- Swiper -->
 			    <div class="swiper-container">
@@ -341,22 +355,5 @@ body {
 		<a href=""  class="active"><img src="../img/sxy/my1.png" alt=""/></a>
     </footer>
     <!--底部结束-->
-</div>
-</div>
 </body>
 </html>
-<script type="text/javascript">
-
-    var myScroll;
-
-    function loaded () {
-        myScroll = new IScroll('#wrapper', {
-            scrollbars: true,
-            mouseWheel: true,
-            interactiveScrollbars: true,
-            shrinkScrollbars: 'scale',
-            fadeScrollbars: true
-        });
-    }
-
-</script>
