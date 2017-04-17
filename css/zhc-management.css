@@ -168,7 +168,8 @@ main {
         right: 0.2rem;
         top: 50%;
         margin-top: -0.2rem;
-        border-radius: 0.6rem; }
+        border-radius: 0.6rem;
+        overflow: hidden; }
         main .zhc-zl-two .li-right > div .zhc-right-full {
           width: 0;
           height: 100%;
