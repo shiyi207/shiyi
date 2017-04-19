@@ -68,6 +68,9 @@ input{
     background-image: url(../img/ly/lt_09.png);
     background-size: 100% 0.7rem;
     background-position: center;
+    position: absolute;
+    bottom:0;
+    left:0;
     /*background:blue;*/
 
 }
