@@ -109,9 +109,9 @@ body {
 		<div class="sxy-header" id="header">
 			<!--头部-->
 			<header>
-				<a href="../html/index.html" class="sxy-return"><img src="../img/sxy/sxy-return.png" alt="" /></a>
+				<a href="" class="sxy-return"><img src="../img/sxy/sxy-return.png" alt="" /></a>
 				<img src="../img/sxy/sxy-paimai.png" alt="" class="sxy-paimai"/>
-				<a href="" class="sxy-return"><img src="../img/sxy/sxy-tab.png" alt="" /></a>
+				<a href="javascript:;" class="sxy-return"><img src="../img/sxy/sxy-tab.png" alt="" /></a>
 			</header>
 			<!--倒计时-->
 			<div class="sxy-time">
@@ -149,15 +149,15 @@ body {
 				<div class="paimai">限量拍卖</div>
 			</div>
 			<div class="sxy-data">
-				<a href="" class="sxy-hobby">
+				<a href="javascript:;" class="sxy-hobby">
 					<img src="../img/sxy/sxy-hobby1.png" alt="" />
 					<h1 id="sxy-shu">360</h1>
 				</a>
-				<a href="" class="sxy-hobby">
+				<a href="javascript:;" class="sxy-hobby">
 					<img src="../img/sxy/sxy-hobby1.png" alt="" />
 					<h1 id="sxy-shu">236</h1>
 				</a>
-				<a href="" class="sxy-hobby">
+				<a href="javascript:;" class="sxy-hobby">
 					<img src="../img/sxy/sxy-hobby1.png" alt="" />
 					<h1 id="sxy-shu">20</h1>
 				</a>
@@ -170,7 +170,7 @@ body {
 		<!--忆物推荐-->
 		<div class="sxy-yiwu">
 			<img src="../img/sxy/yiwu-title.png" alt="" class="yiwu-title" />
-			<a href=""class="sxy-reload"><img src="../img/sxy/yiwu-reload.png" alt="" /></a>
+			<a href="javascript:;"class="sxy-reload"><img src="../img/sxy/yiwu-reload.png" alt="" /></a>
 		</div>
 		<div class="yiwu-content">
 			<img src="../img/sxy/sxy-ban2.png" alt="" class="yiwu-bg"/>
@@ -234,5 +234,10 @@ body {
 		</div>
 	</div>
 	</div>
+		<script>
+			document.querySelector("header>a:first-child").onclick=function(){
+				window.history.back();
+			}
+		</script>
 	</body>
 </html>
