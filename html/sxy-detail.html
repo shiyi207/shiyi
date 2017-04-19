@@ -13,13 +13,14 @@
    		<link rel="stylesheet" href="../css/common.css">
     	<link rel="stylesheet" href="../css/sxy-detail.css">
     	<script src="../js/common.js"></script>
+    	<script src="../js/jquery.js"></script>
 	</head>
 	<body>
 		<!--header-->
 		<header id="header">
-			<a href="../html/index.html" class="sxy-return"><img src="../img/sxy/sxy-return.png" alt="" /></a>
+			<a href="javascript:;" class="sxy-return"><img src="../img/sxy/sxy-return.png" alt="" /></a>
 			<img src="../img/sxy/sxy-spxq.png" alt="" class="sxy-paimai"/>
-			<a href="" class="sxy-return"><img src="../img/sxy/sxy-tab.png" alt="" /></a>
+			<a href="javascript:;" class="sxy-return"><img src="../img/sxy/sxy-tab.png" alt="" /></a>
 		</header>
 		<div id="wrapper">
 			<div id="scroller">
@@ -52,7 +53,7 @@
 		    	<!--猜你喜欢-->
 		    	<div class="sxy-rects">
 			    	<div class="sxy-bg-rect">
-						<a href="">
+						<a href="javascript:;">
 							<img src="../img/sxy/sxy-cnxh1.png" alt="" />
 							<h3><span>563.00</span><span>&nbsp;&nbsp;RMB</span></h3>
 							<div><span>Baide</span><span>Conction</span></div>
@@ -75,7 +76,7 @@
 						</div>
 					</div>
 					<div class="sxy-bg-rect">
-						<a href="">
+						<a href="javascript:;">
 							<img src="../img/sxy/sxy-cnxh2.png" alt="" />
 							<h3><span>563.00</span><span>&nbsp;&nbsp;RMB</span></h3>
 							<div><span>Baide</span><span>Conction</span></div>
@@ -106,5 +107,13 @@
 			<a href="javascript:;" class="jiaru"><img src="../img/sxy/sxy-gou.png" alt="" /></a>
 			<a href="lp-pay-2.html" class="mai"><img src="../img/sxy/sxy-mai.png" alt="" /></a>
 		</footer>
+		<script>
+			$(function(){
+				var back=$('#header>a:first').click(function(){
+							window.history.back()
+						})
+				// console.log(back)
+			})
+		</script>
 	</body>
 </html>
