@@ -10,4 +10,8 @@ window.onload=function(){
 		})
 
 	})
+	let a=document.querySelector('.zhc-headerbottom a')
+	a.addEventListener('touchstart',function(){
+		window.history.back()
+	})
 }

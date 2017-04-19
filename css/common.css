@@ -1,4 +1,4 @@
-body,ul,ol,li,p,pre,h1,h2,h3,h4,h5,h6,input,form{
+*{
     margin:0;
     padding:0;
     list-style:none;
@@ -19,7 +19,7 @@ body{
     -webkit-overflow-scrolling:touch;
 }
 *{
-    font-family: "helvetica";
+    font-family: "微软雅黑";
     max-height:9999999px;
     font-size: 12px;
 }

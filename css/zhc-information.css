@@ -245,6 +245,12 @@ html {
           .zhc-hydt li .zhc-picture .zhc-ps div img {
             height: 100%;
             width: 100%; }
+      .zhc-hydt li .zhc-picture .zhc-shipin {
+        width: 100%;
+        height: 2.36rem; }
+        .zhc-hydt li .zhc-picture .zhc-shipin img {
+          width: 100%;
+          height: 2.36rem; }
     .zhc-hydt li .zhc-pinlun {
       width: 100%;
       height: 0.46rem;
