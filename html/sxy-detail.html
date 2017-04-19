@@ -109,9 +109,9 @@
 		</footer>
 		<script>
 			$(function(){
-				var back=$('#header>a:first').click(function(){
-							window.history.back()
-						})
+				var back=$('#header>a:first').on('touchstart',function(){
+					window.history.back()
+				})
 				// console.log(back)
 			})
 		</script>

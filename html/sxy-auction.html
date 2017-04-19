@@ -12,6 +12,7 @@
    		<link rel="stylesheet" href="../css/common.css">
     	<link rel="stylesheet" href="../css/sxy-auction.css">
     	<script src="../js/common.js"></script>
+    	<script src="../js/jquery.js"></script>
     	<script type="text/javascript" src="../js/iscroll.js" ></script>
     	<script type="text/javascript">
 
@@ -109,7 +110,7 @@ body {
 		<div class="sxy-header" id="header">
 			<!--头部-->
 			<header>
-				<a href="" class="sxy-return"><img src="../img/sxy/sxy-return.png" alt="" /></a>
+				<a href="javascript:;" class="sxy-return"><img src="../img/sxy/sxy-return.png" alt="" /></a>
 				<img src="../img/sxy/sxy-paimai.png" alt="" class="sxy-paimai"/>
 				<a href="javascript:;" class="sxy-return"><img src="../img/sxy/sxy-tab.png" alt="" /></a>
 			</header>
@@ -235,9 +236,12 @@ body {
 	</div>
 	</div>
 		<script>
-			document.querySelector("header>a:first-child").onclick=function(){
-				window.history.back();
-			}
+			// document.querySelector("header>a:first-child").onclick=function(){
+			// 	window.history.back();
+			// }
+			var back=$('header>a:first').on('touchstart',function(){
+				window.history.back()
+			})
 		</script>
 	</body>
 </html>

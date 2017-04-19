@@ -13,17 +13,24 @@
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/ly2.css">
     <script src="../js/common.js"></script>
+    <script src="../js/jquery.js"></script>
 </head>
 <body>
     <div class="top">
-         <div class="return"><a href="zhc-information.html"></a></div>
+         <div class="return"><a href="javascript:;"></a></div>
          <div class="title">Alina.Green</div>
-        <div class="list"><a href=""></a></div>
+        <div class="list"><a href="javascript:;"></a></div>
     </div>
     <div class="middle"></div>
     <div class="shuru">
         <input type="text" >
     </div>
     <div class="bottom"></div>
+    <script>
+        $('.return').on('touchstart',function(){
+            window.history.back()
+        })
+    </script>
+
 </body>
 </html>

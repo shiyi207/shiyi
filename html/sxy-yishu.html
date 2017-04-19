@@ -30,7 +30,7 @@
 					<script>
 
 					$(function(){
-						var back=$('.header-top>a:first').click(function(){
+						var back=$('.header-top>a:first').on('touchstart',function(){
 							window.history.back()
 						})
 					

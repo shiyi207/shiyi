@@ -31,13 +31,12 @@ html,body{
     .zhc-zhe{
         position: absolute;
         left: 0;
-        bottom: 0;
+        bottom: 1px;
         width: 100%;
         height: 100%;
-//      opacity: 0.6;
         >img{
             width: 100%;
-            height: 100%;
+            height: 101%;
         }
     }
     .zhc-headerbottom{
@@ -74,16 +73,6 @@ html,body{
             }
         }
     }
-//  .zhc-topxian{
-//      width: 100%;
-//      height: 0.1rem;
-//      background: url(../img/zhc/zhc-topxian_03.png);
-//      background-position: center;
-//      background-size:cover;
-//      position: absolute;
-//      top: 0.4rem;
-//      left: 0;
-//  }
     
     .zhc-zan{
         width: 100%;
@@ -104,15 +93,6 @@ html,body{
             display: flex;
             align-items: center;
             overflow: hidden;
-//          i{
-//              position: absolute;
-//              right: 0.1rem;
-//              top: 0.1rem;
-//              font-size: 0.24rem;
-//              color: #fff;
-//              font-style: normal;
-//              display: none;
-//          }
             img{
                 width: 0.32rem;
                 height: 0.28rem;
@@ -362,6 +342,30 @@ html,body{
         .zhc-picture{
             width: 100%;
             height: 2.36rem;
+            .zhc-pic1{
+                float: left;
+                width: 1.72rem;
+                height: 100%;
+                div:first-child{
+                    margin-bottom:0.1rem ;
+                }
+                div{
+                    width: 100%;
+                    height: 1.12rem;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            .zhc-pic2{
+                float: left;
+                width: 1.26rem;
+                height: 100%;
+                margin: 0 0.1rem;
+                img{
+                    width: 100%;
+                }
+            }
             .zhc-p1{
                 float: left;
                 width: 3.08rem;

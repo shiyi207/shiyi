@@ -16,7 +16,7 @@ $().ready(function(){
   			if($('.color').length==6){
 				$('.cover').removeClass('active');
         		$('.return')[0].addEventListener('touchstart',function(){
-        			location.href='https://htmlpreview.github.io/?https://raw.githubusercontent.com/shiyi207/shiyi/master/html/index.html';
+        			location.href='index.html';
         		})
 			}
             this.value=this.value.replace(/^(.).*$/,'$1');

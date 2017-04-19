@@ -1,3 +1,10 @@
-/**
- * Created by thinkpad on 2017/4/14.
- */
+$(document).ready(function(){
+    console.log($('input'));
+    $('input').on('focus',function(){
+        $('.bottom').addClass('yc');
+    })
+    $('input').on('blur',function(){
+        $('.bottom').removeClass('yc');
+    })
+})
+
