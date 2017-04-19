@@ -19,7 +19,7 @@
 		<!--header-->
 		<header>
 			<div class="header-top">
-				<a href="" class="sxy-return"><img src="../img/sxy/sxy-return.png" alt="" /></a>
+				<a href="javascript:;" class="sxy-return"><img src="../img/sxy/sxy-return.png" alt="" /></a>
 				<img src="../img/sxy/sxy-huan.png" alt="" class="sxy-paimai"/>
 				<a href="javascript:;" class="sxy-return"><img src="../img/sxy/sxy-tab.png" alt="" /></a>
 			</div>
@@ -154,9 +154,12 @@
 			</div>
 		</div>
 		<script>
-			document.querySelector("header >.header-top>a:first-child").onclick=function(){
-				window.history.back();
-			}
+			// document.querySelector("header >.header-top>a:first-child").onclick=function(){
+			// 	window.history.back();
+			// }
+			var back=$('.header-top>a:first').on('touchstart',function(){
+				window.history.back()
+			})
 		</script>
 	</body>
 </html>
