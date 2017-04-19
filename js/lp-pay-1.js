@@ -1,4 +1,8 @@
 $(document).ready(function() {
+	//	返回
+	$('.return')[0].addEventListener('touchstart',function(){
+		history.back();
+	})
 	//删除//支付
 	var money=0;
 	$('.edit')[0].addEventListener('touchstart',function(){
@@ -64,7 +68,7 @@ $(document).ready(function() {
 		}
 		$('.left')[0].addEventListener('touchstart',function(){
 			if($('.left').hasClass('active')){
-				location.href='https://htmlpreview.github.io/?https://raw.githubusercontent.com/shiyi207/shiyi/master/html/lp-pay-2.html';
+				location.href='lp-pay-2.html';
 				$('.cover').css('display','none');
 			}else{
 				$('.left').toggleClass('active');
@@ -73,7 +77,7 @@ $(document).ready(function() {
 		})
 		$('.right')[0].addEventListener('touchstart',function(){
 			if($('.right').hasClass('active')){
-				location.href='https://htmlpreview.github.io/?https://raw.githubusercontent.com/shiyi207/shiyi/master/html/lp-pay-1.html';
+				location.href='lp-pay-1.html';
 			}else{
 				$('.left').toggleClass('active');
 				$('.right').toggleClass('active');
