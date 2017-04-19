@@ -20,30 +20,33 @@
 			<div class="header-top">
 				<a href="../html/sxy-menu.html" class="sxy-return"><img src="../img/sxy/sxy-return.png" alt="" /></a>
 				<img src="../img/sxy/peishi.png" alt="" class="sxy-paimai"/>
-				<a href="" class="sxy-return"><img src="../img/sxy/sxy-tab.png" alt="" /></a>
+				<a href="javascript:;" class="sxy-return"><img src="../img/sxy/sxy-tab.png" alt="" /></a>
 			</div>
 			<div class="search">
-	        	<a href=""><img src="../img/sxy/sxy-sou.png" alt="" /></a>
+	        	<a href="javascript:;"><img src="../img/sxy/sxy-sou.png" alt="" /></a>
 	            <form action="">
 	                <input type="text" placeholder="search...">
 	                <!-- 加入搜索页链接，点击搜索框即跳转 -->
 					<script>
 					$(function(){
+						var back=$('.header-top>a:first').click(function(){
+							window.history.back()
+						})
 						var search=$('header input[type=text]');
 						search.focus(function(){
-							location.href='https://htmlpreview.github.io/?https://github.com/shiyi207/shiyi/blob/master/html/zl-sousuo1.html'
-							// 	location.href='zl-sousuo1.html'	
+							// location.href='https://htmlpreview.github.io/?https://github.com/shiyi207/shiyi/blob/master/html/zl-sousuo1.html'
+								location.href='zl-sousuo1.html'	
 						})
 					})
 					</script>
 	            </form>
-	            <a href=""><img src="../img/sxy/sxy1.png" alt="" /></a>
+	            <a href="javascript:;"><img src="../img/sxy/sxy1.png" alt="" /></a>
 	        </div>
 		</header>
 		<!--衣服展示-->
 		<div class="tianchong"></div>
 		<div class="bg">
-			<a href="">
+			<a href="javascript:;">
 				<img src="../img/sxy/peishi1.png" alt="" class="sxy-product"/>
 				<div class="sxy-content">
 					<p><span>香奈儿</span><span>斜挎背包</span></p>
@@ -55,7 +58,7 @@
 			</a>
 		</div>
 		<div class="bg">
-			<a href="">
+			<a href="javascript:;">
 				<img src="../img/sxy/peishi2.png" alt=""  class="sxy-product"/>
 				<img src="../img/sxy/sxy-discount.png" alt="" class="sxy-discount"/>
 				<div class="sxy-content">
@@ -68,7 +71,7 @@
 			</a>
 		</div>
 		<div class="bg">
-			<a href="">
+			<a href="javascript:;">
 				<img src="../img/sxy/peishi3.png" alt=""  class="sxy-product"/>
 				<img src="../img/sxy/sxy-new.png" alt="" class="sxy-discount"/>
 				<div class="sxy-content">
@@ -81,7 +84,7 @@
 			</a>
 		</div>
 		<div class="bg">
-			<a href="">
+			<a href="javascript:;">
 				<img src="../img/sxy/peishi4.png" alt=""  class="sxy-product"/>
 				<img src="../img/sxy/sxy-discount.png" alt="" class="sxy-discount"/>
 				<div class="sxy-content">
@@ -94,7 +97,7 @@
 			</a>
 		</div>
 		<div class="bg">
-			<a href="">
+			<a href="javascript:;">
 				<img src="../img/sxy/peishi5.png" alt=""  class="sxy-product"/>
 				<img src="../img/sxy/sxy-new.png" alt="" class="sxy-discount"/>
 				<div class="sxy-content">
