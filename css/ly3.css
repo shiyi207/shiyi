@@ -62,8 +62,15 @@
 }
 .rmht1{
     width:100%;
-    height:10.68rem;
+    height:7.5rem;
     background:#F5F5F3;
+}
+.gg13{
+    width:7.5rem;
+    height:3rem;
+    background-image: url(../img/ly/gg13.png);
+    background-position: center;
+    background-size: 7.5rem 3rem;
 }
 .ht2{
     width:100%;
