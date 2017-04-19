@@ -106,7 +106,7 @@
 	}
 	.input4{
 		position: absolute;
-		top: 160px;
+		top: 155px;
 		left: 20%;
 		outline: none;
 		border: none;
@@ -250,7 +250,7 @@
 	}
 </style>
 <body>
-	<a href="https://htmlpreview.github.io/?https://github.com/shiyi207/shiyi/blob/master/html/denglu.html">
+	<a href="denglu.html">
 		<img src="../img/lg/return.gif" alt="" class="return"/>
 	</a>
 	<img src="../img/lg/logo_01_11.png" alt="" class="logo1"/>
@@ -284,7 +284,8 @@
 	$('#aa').validate({
 			 rules:{
             zhanghao: {
-                required:true
+                required:true,
+                minlength:6
             },
             mima:{
                 required:true,
@@ -317,15 +318,15 @@
             }
         }
 		})
-		
-		$("#aa").keyup(function(){
-			if($("#text").val()=='666666'||'666@qq'&&$("#text1").val()=='666666'&&$("#pass").val()==$("#pass1").val()){
-				console.log($("#text").val())
-				$('.liji')[0].addEventListener('touchstart',function(){
-						location.href='https://htmlpreview.github.io/?https://github.com/shiyi207/shiyi/blob/master/html/zhuce3.html'
+		$('.liji')[0].addEventListener('touchstart',function(){
+						location.href='zhuce3.html'
 				})
-			}	
-  	})
+//		$("#aa").keyup(function(){
+//			if($("#text").val()=='666666'||'666@qq'&&$("#text1").val()=='666666'&&$("#pass").val()==$("#pass1").val()){
+//				console.log($("#text").val())
+//				
+//			}	
+//	})
 
 </script>
 </body>
