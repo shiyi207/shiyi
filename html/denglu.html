@@ -180,10 +180,10 @@
 	}
 </style>
 <body>
-	<a href="https://htmlpreview.github.io/?https://github.com/shiyi207/shiyi/blob/master/html/index.html">
+	<a>
 		<img src="../img/lg/return.gif" alt="" class="return"/>
 	</a>
-	<a href="https://htmlpreview.github.io/?https://github.com/shiyi207/shiyi/blob/master/html/zhuce.html">
+	<a href="zhuce.html">
 		<img src="../img/lg/logo_01_03.png" alt="" class="logo"/>
 	</a>
 	<img src="../img/lg/logo_01_11.png" alt="" class="logo1"/>
@@ -208,9 +208,9 @@
 	</a>
 	<span class="fang">  其他登陆方式  </span>
 	<div class="thr">
-		<a href=""><img src="../img/lg/weixin_24.gif" alt="" class="three1"/></a>
-		<a href=""><img src="../img/lg/weixin_19.gif" alt="" class="three2"/></a>
-		<a href=""><img src="../img/lg/weixin_21.png" alt="" class="three3"/></a>
+		<a><img src="../img/lg/weixin_24.gif" alt="" class="three1"/></a>
+		<a><img src="../img/lg/weixin_19.gif" alt="" class="three2"/></a>
+		<a><img src="../img/lg/weixin_21.png" alt="" class="three3"/></a>
 	</div>
 	<script>
 		$('#aa').validate({
@@ -249,12 +249,15 @@
             }
         }
 		})
+		$('.return').on('click',function(){
+			history.go(-1)
+		})
 		
 		$("#aa").keyup(function(){
 
 			if($("#text").val()=='666666'&&$("#pass").val()=='666666'){		
 				$('.liji')[0].addEventListener('touchstart',function(){
-				location.href='https://htmlpreview.github.io/?https://github.com/shiyi207/shiyi/blob/master/html/zhc-Center.html'
+				location.href='zhc-Center.html'
 		})
 			}
   	})
