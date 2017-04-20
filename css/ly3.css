@@ -65,6 +65,11 @@
     height:7.5rem;
     background:#F5F5F3;
 }
+/*.gg12{*/
+    /*width:100%;*/
+    /*height:3rem;*/
+
+/*}*/
 .gg13{
     width:7.5rem;
     height:3rem;
@@ -81,7 +86,7 @@
     position: relative;
 }
 .ht2>img{
-    width:100%;
+    width:7.5rem;
     height:1.36rem;
     position: absolute;
     left:0;
@@ -89,6 +94,9 @@
     z-index:2;
 
 }
+/*body{*/
+    /*overflow:hidden;*/
+/*}*/
 .htbg{
     width:100%;
     height:1rem;
@@ -168,7 +176,7 @@
     background-image: url(../img/ly/dianzan.png);
     background-position: center;
     background-size: 2.1rem 0.64rem;
-    margin-left:5.5rem;
+    margin-left:5.1rem;
     margin-top:-0.2rem;
 }
 .dian{
