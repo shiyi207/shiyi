@@ -80,19 +80,22 @@
     	text-align: center;
     	z-index: 500;
     }
-    .anniu{
-    	width: 40%;
-    	height: 1rem;
-    	position: absolute;
-    	top:86%;
+    .aa{
+        position: relative;
+    }
+    .anniua{
+        display:block;
+        width: 40%;
+        height: 1rem;
+        position: absolute;
+        top:88%;
         left: 30%;
+        z-index:100;
     }
     .swiper-pagination,.swiper-button-next,.swiper-button-prev{
     	display:none;
     }
-    .swiper-slide:nth-child(3){
-    	position: relative;
-    }
+    
     
 </style>
 <body>
@@ -101,9 +104,9 @@
 			        <div class="swiper-wrapper">
 			            <img src="../img/lg/bbb_03.png" class="swiper-slide" style="width:100%">
 			            <img src="../img/lg/bbb_05.png" class="swiper-slide">
-			            	<div class="swiper-slide">
+			            	<div class="swiper-slide aa">
 			            		 <img src="../img/lg/bbb_07.png" /> 
-			            		 <a href="index.html">
+			            		 <a href="index.html" class="anniua">
 			            		 	<img src="../img/lg/anniu_03.png" alt="" class="anniu"/>
 			            		 </a>
 			            	</div>

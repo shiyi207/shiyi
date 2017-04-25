@@ -17,13 +17,13 @@ html, body {
     box-sizing: border-box;
     padding-top: 0.1rem;
     display: flex;
-    align-items: center;
-    justify-content: space-between; }
+    align-items: center; }
     .zhc-header .zhc-headerbottom span {
       display: block;
       width: 1.66rem;
       height: 0.88rem;
       float: left;
+      margin-left: 2.5rem;
       font-size: 0.28rem;
       color: #fff;
       line-height: 0.88rem;
@@ -42,7 +42,8 @@ html, body {
     .zhc-header .zhc-headerbottom div {
       width: 0.7rem;
       height: 0.7rem;
-      float: left; }
+      float: left;
+      margin-left: 2.2rem; }
       .zhc-header .zhc-headerbottom div a {
         display: block;
         width: 100%;
